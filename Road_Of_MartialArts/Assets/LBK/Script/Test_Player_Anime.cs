@@ -7,6 +7,7 @@ public class Test_Player_Anime : MonoBehaviour
 
     private Animator animator;
     private Transform transform;
+    private bool isjump = false;
     // Start is called before the first frame update
     void Start()
     {
@@ -17,7 +18,7 @@ public class Test_Player_Anime : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetAxis("Horizontal") < 0)
+        if (Input.GetAxis("Horizontal") < 0)
         {
             animator.SetBool("IsRunning", true);
             transform.localScale = new Vector3(-1, 1, 1);
@@ -33,6 +34,12 @@ public class Test_Player_Anime : MonoBehaviour
         {
             animator.SetBool("IsRunning", true);
             transform.localScale = new Vector3(1, 1, 1);
+        }
+
+        if(Input.GetButtonDown("A"))
+        {
+            animator.SetTrigger("IsJump");
+            isjump = true;
         }
     }
 }
