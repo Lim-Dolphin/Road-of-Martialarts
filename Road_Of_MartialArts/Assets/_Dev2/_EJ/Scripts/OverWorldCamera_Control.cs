@@ -1,7 +1,7 @@
 using UnityEngine;
 using Cinemachine;
 
-public class CameraControlToggle : MonoBehaviour
+public class OverWorldCamera_Control : MonoBehaviour
 {
     public Transform player;
     public CinemachineVirtualCamera virtualCamera; 
@@ -71,12 +71,20 @@ public class CameraControlToggle : MonoBehaviour
         }
     }
 
-    void HandleCameraMovement()
-    {
-        float moveX = Input.GetAxis("Horizontal"); 
-        float moveZ = Input.GetAxis("Vertical");  
+void HandleCameraMovement()
+{
+    float moveX = Input.GetAxis("Horizontal"); 
+    float moveZ = Input.GetAxis("Vertical");  
 
-        Vector3 moveDirection = new Vector3(moveX, 0, moveZ) * cameraMoveSpeed * Time.deltaTime;
-        mainCamera.position += moveDirection; // 메인 카메라 직접 이동
+    Vector3 moveDirection = new Vector3(moveX, 0, moveZ) * cameraMoveSpeed * Time.deltaTime;
+    mainCamera.position += moveDirection;
+
+    // 마우스 휠로 FOV 줌 인/아웃
+    float scroll = Input.GetAxis("Mouse ScrollWheel");
+    if (scroll != 0)
+    {
+        float newFOV = Camera.main.fieldOfView - scroll * zoomSpeed;
+        Camera.main.fieldOfView = Mathf.Clamp(newFOV, minZoom, maxZoom);
     }
+}
 }
