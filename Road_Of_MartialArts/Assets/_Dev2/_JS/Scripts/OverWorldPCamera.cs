@@ -28,8 +28,8 @@ public class OverWorldPCamera : MonoBehaviour
         dirNormalized = realCamera.position.normalized;
         finalDistance = realCamera.localPosition.magnitude;
 
-        Cursor.lockState = CursorLockMode.Locked;
-        Cursor.visible = false;
+        //Cursor.lockState = CursorLockMode.Locked;
+        //Cursor.visible = false;
     }
 
     void Update()

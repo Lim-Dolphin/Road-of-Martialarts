@@ -5,14 +5,17 @@ using UnityEngine;
 public class FieldPCamera : MonoBehaviour
 {
     public Transform player;
+    public float yOffset;
+    public float zOffset;
+    
     private void Start()
     {
-        Cursor.lockState = CursorLockMode.Locked;
-        Cursor.visible = false;
+        //Cursor.lockState = CursorLockMode.Locked;
+        //Cursor.visible = false;
     }
 
     void Update()
     {
-        transform.position = new Vector3(player.position.x, transform.position.y, player.position.z-35);
+        transform.position = new Vector3(player.position.x, player.position.y + yOffset, player.position.z - zOffset);
     }
 }

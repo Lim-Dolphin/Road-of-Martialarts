@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Rendering.Universal.Internal;
 
 public class Move : MonoBehaviour
 {
@@ -10,6 +11,8 @@ public class Move : MonoBehaviour
     Rigidbody rb;
 
     Vector3 moveVec;
+
+    public float tiltAngle = -34.48f;
 
     private void Start()
     {
@@ -23,6 +26,8 @@ public class Move : MonoBehaviour
 
         moveVec = new Vector3(hAxis, 0, vAxis).normalized;
 
-        rb.velocity = moveVec * speed;
+        Quaternion tiltRotation = Quaternion.Euler(tiltAngle, 0, 0);
+
+        rb.velocity = tiltRotation * (moveVec * speed);
     }
 }
