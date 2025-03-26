@@ -4,5 +4,14 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/_Dev2/OverWorld/scene/EJ_Overworld.unity
+    guid: 0f804d0b673383040b0f4227b8bed085
+  - enabled: 0
+    path: Assets/_Dev2/OverWorld/scene/EJ_Map.unity
+    guid: d47df37594c4fc14591890183b11f27b
+  - enabled: 1
+    path: Assets/_Dev2/Field/_Scenes/Field_JS.unity
+    guid: b41e6aa8c57bd504ea5a3c259dd5aefc
   m_configObjects: {}
