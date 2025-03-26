@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Rendering.Universal.Internal;
 
-public class Move : MonoBehaviour
+public class Move_2 : MonoBehaviour
 {
     public float speed;
     float hAxis;
