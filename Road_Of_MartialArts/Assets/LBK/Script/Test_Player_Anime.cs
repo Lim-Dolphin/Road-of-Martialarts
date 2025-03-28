@@ -41,5 +41,10 @@ public class Test_Player_Anime : MonoBehaviour
             animator.SetTrigger("IsJump");
             isjump = true;
         }
+
+        if(Input.GetButtonDown("B"))
+        {
+            animator.SetTrigger("IsHurt");
+        }
     }
 }
