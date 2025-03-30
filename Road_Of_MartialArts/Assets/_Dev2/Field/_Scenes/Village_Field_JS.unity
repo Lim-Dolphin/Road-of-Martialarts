@@ -166,9 +166,9 @@ GameObject:
   m_Component:
   - component: {fileID: 167627901}
   - component: {fileID: 167627902}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: san_right4
-  m_TagString: Untagged
+  m_TagString: BackGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -251,9 +251,9 @@ GameObject:
   - component: {fileID: 206330050}
   - component: {fileID: 206330051}
   - component: {fileID: 206330052}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: san_back1
-  m_TagString: Untagged
+  m_TagString: BackGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -313,7 +313,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: -2
+  m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 20f273372d5814749ac3f70e01843279, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -350,9 +350,9 @@ GameObject:
   - component: {fileID: 300995531}
   - component: {fileID: 300995530}
   - component: {fileID: 300995533}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Barrel_Dynamic
-  m_TagString: Untagged
+  m_TagString: Object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -458,8 +458,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 1877908795
+  m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 5947fee91574dbf4198ebf57d9f55f8a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -494,9 +494,9 @@ GameObject:
   m_Component:
   - component: {fileID: 351718881}
   - component: {fileID: 351718880}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Map_Background
-  m_TagString: Untagged
+  m_TagString: BackGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -566,6 +566,8 @@ Transform:
   m_LocalScale: {x: 42.89382, y: 42.89382, z: 42.89382}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 958232240}
+  - {fileID: 1477890688}
   - {fileID: 206330050}
   - {fileID: 1569777225}
   - {fileID: 1417858434}
@@ -596,7 +598,7 @@ GameObject:
   - component: {fileID: 492438443}
   m_Layer: 6
   m_Name: mooin
-  m_TagString: Untagged
+  m_TagString: NPC
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -654,8 +656,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 1877908795
+  m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 90be3b802e256bd45b680bf049a903ba, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -760,7 +762,7 @@ GameObject:
   - component: {fileID: 555982889}
   m_Layer: 6
   m_Name: NPC2
-  m_TagString: Untagged
+  m_TagString: NPC
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -818,8 +820,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 1877908795
+  m_SortingLayer: 1
   m_SortingOrder: -1
   m_Sprite: {fileID: 21300000, guid: 93a2f183e3efeb347883824191ed9865, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -920,9 +922,9 @@ GameObject:
   - component: {fileID: 576030947}
   - component: {fileID: 576030946}
   - component: {fileID: 576030945}
-  m_Layer: 0
-  m_Name: Ground_Left
-  m_TagString: Untagged
+  m_Layer: 10
+  m_Name: Ground
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1025,9 +1027,9 @@ GameObject:
   - component: {fileID: 604773404}
   - component: {fileID: 604773403}
   - component: {fileID: 604773405}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: ' Haitai'
-  m_TagString: Untagged
+  m_TagString: Object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1106,8 +1108,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 1877908795
+  m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 07aa68da204d02348983070088dd4ad1, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -1142,9 +1144,9 @@ GameObject:
   m_Component:
   - component: {fileID: 661842234}
   - component: {fileID: 661842235}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: san_right2
-  m_TagString: Untagged
+  m_TagString: BackGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1265,9 +1267,9 @@ GameObject:
   - component: {fileID: 748679401}
   - component: {fileID: 748679400}
   - component: {fileID: 748679399}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Wall_Left
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1372,9 +1374,9 @@ GameObject:
   - component: {fileID: 758989230}
   - component: {fileID: 758989232}
   - component: {fileID: 758989231}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Hanok
-  m_TagString: Untagged
+  m_TagString: Object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1417,8 +1419,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 1877908795
+  m_SortingLayer: 1
   m_SortingOrder: -1
   m_Sprite: {fileID: 21300000, guid: 259222732d7b08a469f261c2ed27f8c7, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -1510,9 +1512,9 @@ GameObject:
   m_Component:
   - component: {fileID: 814531845}
   - component: {fileID: 814531846}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: san_right5
-  m_TagString: Untagged
+  m_TagString: BackGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1597,9 +1599,9 @@ GameObject:
   - component: {fileID: 815064218}
   - component: {fileID: 815064217}
   - component: {fileID: 815064216}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: scarecrow
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1717,8 +1719,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 1877908795
+  m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 08875dca514ad1f49a78b0276b0f1f62, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -1741,9 +1743,9 @@ GameObject:
   m_Component:
   - component: {fileID: 916922780}
   - component: {fileID: 916922781}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: san_left3
-  m_TagString: Untagged
+  m_TagString: BackGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1756,13 +1758,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 916922779}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0.00045107698, y: -0.00042046487, z: 0.0013728185, w: 0.99999887}
   m_LocalPosition: {x: 4.877159, y: -1.065, z: -1.57}
   m_LocalScale: {x: 0.124130875, y: 0.124130875, z: 0.124130875}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 351718881}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0.052, y: -0.048, z: 0.157}
 --- !u!212 &916922781
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1831,7 +1833,7 @@ GameObject:
   - component: {fileID: 953438075}
   m_Layer: 6
   m_Name: JungJo
-  m_TagString: Untagged
+  m_TagString: NPC
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1965,8 +1967,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 1877908795
+  m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 310e2b86c6fa7bc4c9e4f42eeedb5e20, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -1991,9 +1993,9 @@ GameObject:
   - component: {fileID: 958232243}
   - component: {fileID: 958232242}
   - component: {fileID: 958232241}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Wall_Back_Right_1
-  m_TagString: Untagged
+  m_TagString: BackGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2006,12 +2008,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 958232239}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0.70710677, z: -0.70710677, w: 0}
-  m_LocalPosition: {x: 24.139444, y: 123.79747, z: 119.40001}
-  m_LocalScale: {x: 14.86, y: 3.2274349, z: 16.1}
+  m_LocalRotation: {x: -0, y: 0.7071068, z: -0.7071068, w: 0}
+  m_LocalPosition: {x: -1.3218095, y: 0.85388, z: -0.16901703}
+  m_LocalScale: {x: 0.3464367, y: 0.07524241, z: 0.37534535}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1878321762}
+  m_Father: {fileID: 351718881}
   m_LocalEulerAnglesHint: {x: 90, y: 270, z: 90}
 --- !u!64 &958232241
 MeshCollider:
@@ -2097,9 +2099,9 @@ GameObject:
   - component: {fileID: 1009684455}
   - component: {fileID: 1009684454}
   - component: {fileID: 1009684453}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Wall_Front
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2203,9 +2205,9 @@ GameObject:
   - component: {fileID: 1057464635}
   - component: {fileID: 1057464634}
   - component: {fileID: 1057464633}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Wall_Right
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2312,9 +2314,9 @@ GameObject:
   - component: {fileID: 1076251682}
   - component: {fileID: 1076251685}
   - component: {fileID: 1076251686}
-  m_Layer: 6
+  m_Layer: 3
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2357,8 +2359,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 1877908795
+  m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 7d922ed413116814e8a8055c9b7686ac, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -2380,7 +2382,7 @@ Transform:
   m_GameObject: {fileID: 1076251679}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 63.1, y: -32.8, z: 46.8}
+  m_LocalPosition: {x: 93.94, y: -17.94, z: 72.07}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -2447,7 +2449,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6ccc9c252b1fc3f47aa6cb4acb532f55, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 50
+  speed: 40
   tiltAngle: -30.76
 --- !u!114 &1076251685
 MonoBehaviour:
@@ -2487,9 +2489,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1110623464}
   - component: {fileID: 1110623465}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: san_left4
-  m_TagString: Untagged
+  m_TagString: BackGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2573,9 +2575,9 @@ GameObject:
   - component: {fileID: 1141043723}
   - component: {fileID: 1141043722}
   - component: {fileID: 1141043721}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Wall_Back
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2683,7 +2685,7 @@ GameObject:
   - component: {fileID: 1274373919}
   m_Layer: 6
   m_Name: NPC3
-  m_TagString: Untagged
+  m_TagString: NPC
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2741,8 +2743,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 1877908795
+  m_SortingLayer: 1
   m_SortingOrder: -2
   m_Sprite: {fileID: 21300000, guid: 97e68dc73e00ad94fa9fbba513bcb421, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -2841,9 +2843,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1381424728}
   - component: {fileID: 1381424729}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: san_right3
-  m_TagString: Untagged
+  m_TagString: BackGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2925,9 +2927,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1417858434}
   - component: {fileID: 1417858435}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: san_left1
-  m_TagString: Untagged
+  m_TagString: BackGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3011,9 +3013,9 @@ GameObject:
   - component: {fileID: 1477890691}
   - component: {fileID: 1477890690}
   - component: {fileID: 1477890689}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Wall_Back_Right_2
-  m_TagString: Untagged
+  m_TagString: BackGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3026,12 +3028,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1477890687}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0.70710677, z: -0.70710677, w: 0}
-  m_LocalPosition: {x: 172.73941, y: 123.79747, z: 119.4}
-  m_LocalScale: {x: 14.86, y: 3.2274349, z: 16.1}
+  m_LocalRotation: {x: -0, y: 0.7071068, z: -0.7071068, w: 0}
+  m_LocalPosition: {x: 2.1425583, y: 0.85388, z: -0.16901721}
+  m_LocalScale: {x: 0.3464367, y: 0.07524241, z: 0.37534535}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1878321762}
+  m_Father: {fileID: 351718881}
   m_LocalEulerAnglesHint: {x: 90, y: 270, z: 90}
 --- !u!64 &1477890689
 MeshCollider:
@@ -3121,7 +3123,7 @@ GameObject:
   - component: {fileID: 1537884866}
   m_Layer: 6
   m_Name: NPC
-  m_TagString: Untagged
+  m_TagString: NPC
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3179,8 +3181,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 1877908795
+  m_SortingLayer: 1
   m_SortingOrder: -1
   m_Sprite: {fileID: 21300000, guid: 594c55fe563f80f41bdbe10dad21a923, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -3281,9 +3283,9 @@ GameObject:
   - component: {fileID: 1549321001}
   - component: {fileID: 1549321000}
   - component: {fileID: 1549320998}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Barrel_Static
-  m_TagString: Untagged
+  m_TagString: Object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3374,8 +3376,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 1877908795
+  m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 5947fee91574dbf4198ebf57d9f55f8a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -3399,9 +3401,9 @@ GameObject:
   - component: {fileID: 1569777225}
   - component: {fileID: 1569777227}
   - component: {fileID: 1569777226}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: san_back2
-  m_TagString: Untagged
+  m_TagString: BackGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3473,7 +3475,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: -2
+  m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 20f273372d5814749ac3f70e01843279, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 1
@@ -3499,9 +3501,9 @@ GameObject:
   - component: {fileID: 1581593084}
   - component: {fileID: 1581593083}
   - component: {fileID: 1581593082}
-  m_Layer: 6
+  m_Layer: 8
   m_Name: ghost
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3635,8 +3637,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 1877908795
+  m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: c36200a681fe3bc4a88c4299c0e434e4, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -3665,7 +3667,7 @@ GameObject:
   - component: {fileID: 1638880639}
   m_Layer: 6
   m_Name: NPC4
-  m_TagString: Untagged
+  m_TagString: NPC
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3799,8 +3801,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 1877908795
+  m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: b993ed2b36596984a8619943f53c90f2, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -3824,9 +3826,9 @@ GameObject:
   - component: {fileID: 1691499581}
   - component: {fileID: 1691499582}
   - component: {fileID: 1691499583}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Cheongsa_Lantern
-  m_TagString: Untagged
+  m_TagString: Object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3922,9 +3924,9 @@ GameObject:
   - component: {fileID: 1750042008}
   - component: {fileID: 1750042010}
   - component: {fileID: 1750042011}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Joseon_bg01
-  m_TagString: Untagged
+  m_TagString: Object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3967,8 +3969,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 1877908795
+  m_SortingLayer: 1
   m_SortingOrder: -1
   m_Sprite: {fileID: 21300000, guid: abbb2240a92af3f44a8c0690b1f43376, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -4039,9 +4041,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1753377850}
   - component: {fileID: 1753377851}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: san_left2
-  m_TagString: Untagged
+  m_TagString: BackGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4127,9 +4129,9 @@ GameObject:
   - component: {fileID: 1788354701}
   - component: {fileID: 1788354700}
   - component: {fileID: 1788354699}
-  m_Layer: 6
+  m_Layer: 8
   m_Name: moodang
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4263,8 +4265,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 1877908795
+  m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 6d00d6c788b6b2f42b81a6a714a3c35e, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -4327,7 +4329,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1878321762}
   m_Layer: 0
-  m_Name: Map
+  m_Name: Space
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4346,8 +4348,6 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1477890688}
-  - {fileID: 958232240}
   - {fileID: 748679398}
   - {fileID: 1009684452}
   - {fileID: 1141043720}
@@ -4365,9 +4365,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1895873591}
   - component: {fileID: 1895873592}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: san_right1
-  m_TagString: Untagged
+  m_TagString: BackGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4449,9 +4449,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1916391609}
   - component: {fileID: 1916391610}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: san_left5
-  m_TagString: Untagged
+  m_TagString: BackGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
