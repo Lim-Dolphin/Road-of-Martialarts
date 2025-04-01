@@ -8,11 +8,13 @@ public class Test_Player_Anime : MonoBehaviour
     private Animator animator;
     private Transform transform;
     private bool isjump = false;
+    private Player_Combo_Test pct;
     // Start is called before the first frame update
     void Start()
     {
         animator = GetComponent<Animator>();
         transform = GetComponent<Transform>();
+        pct = GetComponent<Player_Combo_Test>();
     }
 
     // Update is called once per frame
@@ -42,9 +44,49 @@ public class Test_Player_Anime : MonoBehaviour
             isjump = true;
         }
 
-        if(Input.GetButtonDown("B"))
+        //가드
+        if (Input.GetAxis("RT") > 0)
         {
-            animator.SetTrigger("IsHurt");
+            //잡기(던지기)
+            if (Input.GetButtonDown("B"))
+            {
+                Debug.Log("RT+B");
+                pct.ActionThrow();
+            }
+            //잡기(위치바꾸기)
+            else if (Input.GetButtonDown("X"))
+            {
+                Debug.Log("RT+X");
+                pct.ActionChangePosition();
+            }
+            else
+            {
+                Debug.Log("RT");
+                pct.ActtionGuard();
+            }
+        }
+        else
+        {
+            //공격
+            if (Input.GetButtonDown("B"))
+            {
+                Debug.Log("B");
+                pct.ActionAttack();
+            }
+
+            //세
+            if (Input.GetButtonDown("X"))
+            {
+                Debug.Log("X");
+                pct.ActionForm();
+            }
+
+            //궁극기
+            if (Input.GetButtonDown("Y"))
+            {
+                Debug.Log("Y");
+                pct.ActionUltimate();
+            }
         }
     }
 }
