@@ -38,7 +38,7 @@ public class Player_Combo_Test : MonoBehaviour
     //АјАн
     public void ActionAttack() {
         animator.SetTrigger("Attack");
-        PlayAnimation("Attack_blend", Attack_cnt);
+        PlayAnimation("Attack_Blend", Attack_cnt);
         Attack_cnt++;
 
         if (Attack_cnt >= 4) Attack_cnt = 0;
