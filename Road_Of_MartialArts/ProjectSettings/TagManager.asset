@@ -5,6 +5,8 @@ TagManager:
   serializedVersion: 2
   tags:
   - Mountain
+  - wall
+  - NPC
   layers:
   - Default
   - TransparentFX
