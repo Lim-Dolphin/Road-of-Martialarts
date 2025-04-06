@@ -19,9 +19,11 @@ public class PlayerStats : MonoBehaviour
         currentHP = maxHP;
         currentBattleGauge = 0f;
         currentDash = maxDash;
-        TakeDamage(50f);
     }
-
+    private void Start()
+    {
+    Invoke(nameof(UpdateHUD), 0.1f); // 0.1초 지연 → HUD 초기화 타이밍 보장
+    }
     private void Update()
     {
         RecoverDashOverTime(); // 약진 게이지 자동 회복
@@ -37,7 +39,8 @@ public class PlayerStats : MonoBehaviour
     public int GetDash() => currentDash;
     public int GetMaxDash() => maxDash;
 
-    // 체력 관리
+    // ===== 체력 =====
+    // 체력 감소
     public void TakeDamage(float damage)
     {
         currentHP = Mathf.Max(currentHP - damage, 0f); // 데미지가 음수가 될 수 없게끔 Mathf.Max() 사용
@@ -49,49 +52,45 @@ public class PlayerStats : MonoBehaviour
 
     private void PlayerDeath()
     {
-        Debug.Log("플레이어 사망");
+        // 사망처리 (게임 종료 UI 발생)
     }
 
     // 무예 게이지 관리
     public void GainBattleGauge(float amount) 
-    {
+    {   
+        // combat.cs에서 공격이 발생하면 amount 만큼의 무예 게이지를 얻는다.
         currentBattleGauge = Mathf.Min(currentBattleGauge + amount, maxBattleGauge); // 무술 게이지가 maxBattleGague를 넘어갈 수 없게끔 Mathf.Min() 사용
         UpdateHUD();
     }
 
-    public bool UseBattleGauge(float amount)
+    // ===== 무예 게이지 =====
+    // 스킬 사용
+    public bool UseBattleGauge(float amount) 
+    // amount 만큼의 무예 게이지를 사용하여 스킬을 발동한다.
     {
         if (currentBattleGauge >= amount)
         {
             currentBattleGauge -= amount;
-            Debug.Log($"무예 스킬 사용, 남은 게이지: {currentBattleGauge}");
             return true;
         }
+        // 현재 무예 게이지가 amount보다 작으면 스킬 사용 실패
         else{
-            Debug.Log("무술 게이지 부족!");
             return false;
         }
     }
 
-    // 반격 성공 시
-    public void SuccessParrying()
-    {
-        GainBattleGauge(30f); // 무술 게이지 회복
-        UpdateHUD();
-
-    }
-
+    // ===== 약진 =====
     // 약진 게이지 관리
     public bool UseDash()
     {
         if (currentDash > 0)
         {
             currentDash--;
-            Debug.Log($"약진 사용, 남은 횟수: {currentDash}");
+            UpdateHUD();
             return true;
         }
+        // 약진 게이지가 1보다 작으면 약진 실패
         else{
-            Debug.Log("약진 게이지 부족!");
             return false;
         }
     }
@@ -105,28 +104,31 @@ public class PlayerStats : MonoBehaviour
             if (dashTimer >= dashRecoveryInterval)
             {
                 currentDash++;
+                UpdateHUD();
                 dashTimer = 0f;
-                Debug.Log($"약진 자동 회복: {currentDash}");
             }
         }
     }
 
-    // 반격 성공 시 회복
-    public void RecoverDashOnParry()
+    // 반격 성공 시
+    public void SuccessParrying()
     {
-        if (currentDash < maxDash)
+        GainBattleGauge(30f); // 무예 게이지 회복
+
+        if (currentDash < maxDash) // 약진 게이지 회복복
         {
             currentDash++;
-            Debug.Log($"반격 성공! 약진 1칸 회복: {currentDash}");
         }
+        UpdateHUD();
     }
-
-        void UpdateHUD()
+    // HUD 업데이트
+    void UpdateHUD()
     {
         float hpRatio = currentHP / maxHP;
-        float martialRatio = currentBattleGauge / maxBattleGauge;
+        float maxBattleGaugeRatio = currentBattleGauge / maxBattleGauge;
 
         PlayerHUD.Instance.SetHP(hpRatio);
-        PlayerHUD.Instance.SetMartialGauge(martialRatio);
+        PlayerHUD.Instance.SetBattleGauge(maxBattleGaugeRatio);
+        PlayerHUD.Instance.SetDashGauge(currentDash);
     }
 }
