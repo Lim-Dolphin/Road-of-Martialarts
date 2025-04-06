@@ -6,7 +6,7 @@ public class DynamicLayer : MonoBehaviour
 {
     void Update()
     {
-        int orderLayer = (int)(transform.position.z * 100);
+        int orderLayer = -(int)(transform.position.z * 100);
         GetComponent<SpriteRenderer>().sortingOrder = orderLayer;
     }
 }
