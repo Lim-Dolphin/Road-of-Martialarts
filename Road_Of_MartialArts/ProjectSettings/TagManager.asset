@@ -4,9 +4,13 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - Mountain
-  - wall
   - NPC
+  - Object
+  - Enemy
+  - Ground
+  - Wall
+  - BackGround
+  - Equipment
   layers:
   - Default
   - TransparentFX
