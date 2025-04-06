@@ -212,7 +212,6 @@ GameObject:
   m_Component:
   - component: {fileID: 83737344}
   - component: {fileID: 83737343}
-  - component: {fileID: 83737345}
   m_Layer: 0
   m_Name: "\uC0B013"
   m_TagString: Mountain
@@ -287,22 +286,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1278009225}
   m_LocalEulerAnglesHint: {x: 45, y: 0, z: 0}
---- !u!114 &83737345
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 83737342}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 35e95dc5ff2b64380880dd7ac5922847, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Size: {x: 4, y: 10, z: 4}
-  m_Center: {x: 0, y: 0, z: 0}
-  m_Area: 1
-  m_AffectedAgents: ffffffff
 --- !u!1 &156857810
 GameObject:
   m_ObjectHideFlags: 0
@@ -446,7 +429,6 @@ GameObject:
   m_Component:
   - component: {fileID: 162215884}
   - component: {fileID: 162215885}
-  - component: {fileID: 162215886}
   m_Layer: 0
   m_Name: "\uC0B02 (3)"
   m_TagString: Mountain
@@ -521,22 +503,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &162215886
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 162215883}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 35e95dc5ff2b64380880dd7ac5922847, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Size: {x: 4, y: 10, z: 4}
-  m_Center: {x: 0, y: 0, z: 0}
-  m_Area: 1
-  m_AffectedAgents: ffffffff
 --- !u!1 &246336014
 GameObject:
   m_ObjectHideFlags: 0
@@ -547,7 +513,6 @@ GameObject:
   m_Component:
   - component: {fileID: 246336016}
   - component: {fileID: 246336015}
-  - component: {fileID: 246336017}
   m_Layer: 0
   m_Name: "\uC0B011"
   m_TagString: Mountain
@@ -622,22 +587,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1278009225}
   m_LocalEulerAnglesHint: {x: 45, y: 0, z: 0}
---- !u!114 &246336017
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 246336014}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 35e95dc5ff2b64380880dd7ac5922847, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Size: {x: 4, y: 10, z: 4}
-  m_Center: {x: 0, y: 0, z: 0}
-  m_Area: 1
-  m_AffectedAgents: ffffffff
 --- !u!1 &263065910
 GameObject:
   m_ObjectHideFlags: 0
@@ -727,7 +676,6 @@ GameObject:
   m_Component:
   - component: {fileID: 271584306}
   - component: {fileID: 271584305}
-  - component: {fileID: 271584307}
   m_Layer: 0
   m_Name: "\uC0B04"
   m_TagString: Mountain
@@ -802,22 +750,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1278009225}
   m_LocalEulerAnglesHint: {x: 45, y: 0, z: 0}
---- !u!114 &271584307
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 271584304}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 35e95dc5ff2b64380880dd7ac5922847, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Size: {x: 4, y: 10, z: 4}
-  m_Center: {x: 0, y: 0, z: 0}
-  m_Area: 1
-  m_AffectedAgents: ffffffff
 --- !u!1 &290460864
 GameObject:
   m_ObjectHideFlags: 0
@@ -905,7 +837,6 @@ GameObject:
   m_Component:
   - component: {fileID: 302253406}
   - component: {fileID: 302253407}
-  - component: {fileID: 302253408}
   m_Layer: 0
   m_Name: "\uC0B01 (2)"
   m_TagString: Mountain
@@ -980,22 +911,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &302253408
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 302253405}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 35e95dc5ff2b64380880dd7ac5922847, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Size: {x: 4, y: 10, z: 4}
-  m_Center: {x: 0, y: 0, z: 0}
-  m_Area: 1
-  m_AffectedAgents: ffffffff
 --- !u!1 &313885603
 GameObject:
   m_ObjectHideFlags: 0
@@ -1084,7 +999,7 @@ Transform:
   m_GameObject: {fileID: 313885603}
   serializedVersion: 2
   m_LocalRotation: {x: 0.38268343, y: 0, z: 0, w: 0.92387956}
-  m_LocalPosition: {x: -0.20262793, y: 25.195911, z: -26.17466}
+  m_LocalPosition: {x: -0.16915071, y: 25.195911, z: -26.17466}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1311,7 +1226,6 @@ GameObject:
   m_Component:
   - component: {fileID: 374664973}
   - component: {fileID: 374664972}
-  - component: {fileID: 374664974}
   m_Layer: 0
   m_Name: "\uC0B015"
   m_TagString: Mountain
@@ -1386,22 +1300,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1278009225}
   m_LocalEulerAnglesHint: {x: 45, y: 0, z: 0}
---- !u!114 &374664974
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 374664971}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 35e95dc5ff2b64380880dd7ac5922847, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Size: {x: 4, y: 10, z: 4}
-  m_Center: {x: 0, y: 0, z: 0}
-  m_Area: 1
-  m_AffectedAgents: ffffffff
 --- !u!1 &388176443
 GameObject:
   m_ObjectHideFlags: 0
@@ -1553,7 +1451,6 @@ GameObject:
   m_Component:
   - component: {fileID: 562720622}
   - component: {fileID: 562720623}
-  - component: {fileID: 562720624}
   m_Layer: 0
   m_Name: "\uC0B013 (4)"
   m_TagString: Mountain
@@ -1628,22 +1525,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &562720624
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 562720621}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 35e95dc5ff2b64380880dd7ac5922847, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Size: {x: 4, y: 10, z: 4}
-  m_Center: {x: 0, y: 0, z: 0}
-  m_Area: 1
-  m_AffectedAgents: ffffffff
 --- !u!1 &603231831
 GameObject:
   m_ObjectHideFlags: 0
@@ -1654,7 +1535,6 @@ GameObject:
   m_Component:
   - component: {fileID: 603231832}
   - component: {fileID: 603231833}
-  - component: {fileID: 603231834}
   m_Layer: 0
   m_Name: "\uC0B013 (6)"
   m_TagString: Mountain
@@ -1729,22 +1609,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &603231834
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 603231831}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 35e95dc5ff2b64380880dd7ac5922847, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Size: {x: 4, y: 10, z: 4}
-  m_Center: {x: 0, y: 0, z: 0}
-  m_Area: 1
-  m_AffectedAgents: ffffffff
 --- !u!1 &609345324
 GameObject:
   m_ObjectHideFlags: 0
@@ -1755,7 +1619,6 @@ GameObject:
   m_Component:
   - component: {fileID: 609345326}
   - component: {fileID: 609345325}
-  - component: {fileID: 609345327}
   m_Layer: 0
   m_Name: "\uC0B010"
   m_TagString: Mountain
@@ -1830,22 +1693,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1278009225}
   m_LocalEulerAnglesHint: {x: 45, y: 0, z: 0}
---- !u!114 &609345327
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 609345324}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 35e95dc5ff2b64380880dd7ac5922847, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Size: {x: 4, y: 10, z: 4}
-  m_Center: {x: 0, y: 0, z: 0}
-  m_Area: 1
-  m_AffectedAgents: ffffffff
 --- !u!1 &610267659
 GameObject:
   m_ObjectHideFlags: 0
@@ -1935,7 +1782,6 @@ GameObject:
   m_Component:
   - component: {fileID: 621103428}
   - component: {fileID: 621103429}
-  - component: {fileID: 621103430}
   m_Layer: 0
   m_Name: "\uC0B07"
   m_TagString: Mountain
@@ -2010,22 +1856,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &621103430
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 621103427}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 35e95dc5ff2b64380880dd7ac5922847, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Size: {x: 4, y: 10, z: 4}
-  m_Center: {x: 0, y: 0, z: 0}
-  m_Area: 1
-  m_AffectedAgents: ffffffff
 --- !u!1 &769483468
 GameObject:
   m_ObjectHideFlags: 0
@@ -2036,7 +1866,6 @@ GameObject:
   m_Component:
   - component: {fileID: 769483469}
   - component: {fileID: 769483470}
-  - component: {fileID: 769483471}
   m_Layer: 0
   m_Name: "\uC0B02 (5)"
   m_TagString: Mountain
@@ -2111,22 +1940,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &769483471
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 769483468}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 35e95dc5ff2b64380880dd7ac5922847, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Size: {x: 4, y: 10, z: 4}
-  m_Center: {x: 0, y: 0, z: 0}
-  m_Area: 1
-  m_AffectedAgents: ffffffff
 --- !u!1 &873624022
 GameObject:
   m_ObjectHideFlags: 0
@@ -2239,7 +2052,6 @@ GameObject:
   m_Component:
   - component: {fileID: 891072197}
   - component: {fileID: 891072198}
-  - component: {fileID: 891072199}
   m_Layer: 0
   m_Name: "\uC0B016"
   m_TagString: Mountain
@@ -2314,22 +2126,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &891072199
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 891072196}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 35e95dc5ff2b64380880dd7ac5922847, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Size: {x: 4, y: 10, z: 4}
-  m_Center: {x: 0, y: 0, z: 0}
-  m_Area: 1
-  m_AffectedAgents: ffffffff
 --- !u!1 &893140476
 GameObject:
   m_ObjectHideFlags: 0
@@ -2340,7 +2136,6 @@ GameObject:
   m_Component:
   - component: {fileID: 893140477}
   - component: {fileID: 893140478}
-  - component: {fileID: 893140479}
   m_Layer: 0
   m_Name: "\uC0B013 (5)"
   m_TagString: Mountain
@@ -2415,22 +2210,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &893140479
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 893140476}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 35e95dc5ff2b64380880dd7ac5922847, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Size: {x: 4, y: 10, z: 4}
-  m_Center: {x: 0, y: 0, z: 0}
-  m_Area: 1
-  m_AffectedAgents: ffffffff
 --- !u!1 &945859673
 GameObject:
   m_ObjectHideFlags: 0
@@ -2441,7 +2220,6 @@ GameObject:
   m_Component:
   - component: {fileID: 945859675}
   - component: {fileID: 945859674}
-  - component: {fileID: 945859676}
   m_Layer: 0
   m_Name: "\uC0B01"
   m_TagString: Mountain
@@ -2516,22 +2294,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1278009225}
   m_LocalEulerAnglesHint: {x: 45, y: 0, z: 0}
---- !u!114 &945859676
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 945859673}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 35e95dc5ff2b64380880dd7ac5922847, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Size: {x: 4, y: 10, z: 4}
-  m_Center: {x: 0, y: 0, z: 0}
-  m_Area: 1
-  m_AffectedAgents: ffffffff
 --- !u!1 &947498961
 GameObject:
   m_ObjectHideFlags: 0
@@ -2542,7 +2304,6 @@ GameObject:
   m_Component:
   - component: {fileID: 947498962}
   - component: {fileID: 947498963}
-  - component: {fileID: 947498964}
   m_Layer: 0
   m_Name: "\uC0B02 (4)"
   m_TagString: Mountain
@@ -2617,22 +2378,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &947498964
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 947498961}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 35e95dc5ff2b64380880dd7ac5922847, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Size: {x: 4, y: 10, z: 4}
-  m_Center: {x: 0, y: 0, z: 0}
-  m_Area: 1
-  m_AffectedAgents: ffffffff
 --- !u!1 &976978241
 GameObject:
   m_ObjectHideFlags: 0
@@ -2722,7 +2467,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1010934499}
   - component: {fileID: 1010934500}
-  - component: {fileID: 1010934501}
   m_Layer: 0
   m_Name: "\uC0B01 (1)"
   m_TagString: Mountain
@@ -2797,22 +2541,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &1010934501
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1010934498}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 35e95dc5ff2b64380880dd7ac5922847, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Size: {x: 4, y: 10, z: 4}
-  m_Center: {x: 0, y: 0, z: 0}
-  m_Area: 1
-  m_AffectedAgents: ffffffff
 --- !u!1 &1026484718
 GameObject:
   m_ObjectHideFlags: 0
@@ -2823,7 +2551,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1026484719}
   - component: {fileID: 1026484720}
-  - component: {fileID: 1026484721}
   m_Layer: 0
   m_Name: "\uC0B010 (1)"
   m_TagString: Mountain
@@ -2898,22 +2625,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &1026484721
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1026484718}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 35e95dc5ff2b64380880dd7ac5922847, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Size: {x: 4, y: 10, z: 4}
-  m_Center: {x: 0, y: 0, z: 0}
-  m_Area: 1
-  m_AffectedAgents: ffffffff
 --- !u!1 &1047670520
 GameObject:
   m_ObjectHideFlags: 0
@@ -2924,7 +2635,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1047670521}
   - component: {fileID: 1047670522}
-  - component: {fileID: 1047670523}
   m_Layer: 0
   m_Name: "\uC0B013 (2)"
   m_TagString: Mountain
@@ -2999,22 +2709,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &1047670523
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1047670520}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 35e95dc5ff2b64380880dd7ac5922847, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Size: {x: 4, y: 10, z: 4}
-  m_Center: {x: 0, y: 0, z: 0}
-  m_Area: 1
-  m_AffectedAgents: ffffffff
 --- !u!1 &1078937451
 GameObject:
   m_ObjectHideFlags: 0
@@ -3631,7 +3325,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1301457684}
   - component: {fileID: 1301457683}
-  - component: {fileID: 1301457685}
   m_Layer: 0
   m_Name: "\uC0B09"
   m_TagString: Mountain
@@ -3706,22 +3399,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1278009225}
   m_LocalEulerAnglesHint: {x: 45, y: 0, z: 0}
---- !u!114 &1301457685
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1301457682}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 35e95dc5ff2b64380880dd7ac5922847, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Size: {x: 4, y: 10, z: 4}
-  m_Center: {x: 0, y: 0, z: 0}
-  m_Area: 1
-  m_AffectedAgents: ffffffff
 --- !u!1 &1306321190
 GameObject:
   m_ObjectHideFlags: 0
@@ -3732,7 +3409,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1306321192}
   - component: {fileID: 1306321191}
-  - component: {fileID: 1306321193}
   m_Layer: 0
   m_Name: "\uC0B014"
   m_TagString: Mountain
@@ -3807,22 +3483,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1278009225}
   m_LocalEulerAnglesHint: {x: 45, y: 0, z: 0}
---- !u!114 &1306321193
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1306321190}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 35e95dc5ff2b64380880dd7ac5922847, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Size: {x: 4, y: 10, z: 4}
-  m_Center: {x: 0, y: 0, z: 0}
-  m_Area: 1
-  m_AffectedAgents: ffffffff
 --- !u!1 &1321358080
 GameObject:
   m_ObjectHideFlags: 0
@@ -3833,7 +3493,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1321358081}
   - component: {fileID: 1321358082}
-  - component: {fileID: 1321358083}
   m_Layer: 0
   m_Name: "\uC0B014 (1)"
   m_TagString: Mountain
@@ -3908,22 +3567,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &1321358083
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1321358080}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 35e95dc5ff2b64380880dd7ac5922847, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Size: {x: 4, y: 10, z: 4}
-  m_Center: {x: 0, y: 0, z: 0}
-  m_Area: 1
-  m_AffectedAgents: ffffffff
 --- !u!1 &1339186156
 GameObject:
   m_ObjectHideFlags: 0
@@ -3934,7 +3577,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1339186157}
   - component: {fileID: 1339186158}
-  - component: {fileID: 1339186159}
   m_Layer: 0
   m_Name: "\uC0B02 (2)"
   m_TagString: Mountain
@@ -4009,22 +3651,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &1339186159
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1339186156}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 35e95dc5ff2b64380880dd7ac5922847, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Size: {x: 4, y: 10, z: 4}
-  m_Center: {x: 0, y: 0, z: 0}
-  m_Area: 1
-  m_AffectedAgents: ffffffff
 --- !u!1 &1441863021
 GameObject:
   m_ObjectHideFlags: 0
@@ -4068,7 +3694,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1446701583}
   - component: {fileID: 1446701584}
-  - component: {fileID: 1446701585}
   m_Layer: 0
   m_Name: "\uC0B013 (7)"
   m_TagString: Mountain
@@ -4143,22 +3768,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &1446701585
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1446701582}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 35e95dc5ff2b64380880dd7ac5922847, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Size: {x: 4, y: 10, z: 4}
-  m_Center: {x: 0, y: 0, z: 0}
-  m_Area: 1
-  m_AffectedAgents: ffffffff
 --- !u!1 &1447200018
 GameObject:
   m_ObjectHideFlags: 0
@@ -4169,7 +3778,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1447200019}
   - component: {fileID: 1447200020}
-  - component: {fileID: 1447200021}
   m_Layer: 0
   m_Name: "\uC0B02 (1)"
   m_TagString: Mountain
@@ -4244,22 +3852,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &1447200021
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1447200018}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 35e95dc5ff2b64380880dd7ac5922847, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Size: {x: 4, y: 10, z: 4}
-  m_Center: {x: 0, y: 0, z: 0}
-  m_Area: 1
-  m_AffectedAgents: ffffffff
 --- !u!1 &1451666545
 GameObject:
   m_ObjectHideFlags: 0
@@ -4270,7 +3862,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1451666546}
   - component: {fileID: 1451666547}
-  - component: {fileID: 1451666548}
   m_Layer: 0
   m_Name: "\uC0B02 (6)"
   m_TagString: Mountain
@@ -4345,22 +3936,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &1451666548
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1451666545}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 35e95dc5ff2b64380880dd7ac5922847, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Size: {x: 4, y: 10, z: 4}
-  m_Center: {x: 0, y: 0, z: 0}
-  m_Area: 1
-  m_AffectedAgents: ffffffff
 --- !u!1 &1488742700
 GameObject:
   m_ObjectHideFlags: 0
@@ -4371,7 +3946,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1488742702}
   - component: {fileID: 1488742701}
-  - component: {fileID: 1488742703}
   m_Layer: 0
   m_Name: "\uC0B017"
   m_TagString: Mountain
@@ -4446,22 +4020,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1278009225}
   m_LocalEulerAnglesHint: {x: 45, y: 0, z: 0}
---- !u!114 &1488742703
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1488742700}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 35e95dc5ff2b64380880dd7ac5922847, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Size: {x: 4, y: 10, z: 4}
-  m_Center: {x: 0, y: 0, z: 0}
-  m_Area: 1
-  m_AffectedAgents: ffffffff
 --- !u!1 &1654714330
 GameObject:
   m_ObjectHideFlags: 0
@@ -4472,7 +4030,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1654714332}
   - component: {fileID: 1654714331}
-  - component: {fileID: 1654714333}
   m_Layer: 0
   m_Name: "\uC0B02"
   m_TagString: Mountain
@@ -4547,22 +4104,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1278009225}
   m_LocalEulerAnglesHint: {x: 45, y: 0, z: 0}
---- !u!114 &1654714333
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1654714330}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 35e95dc5ff2b64380880dd7ac5922847, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Size: {x: 4, y: 10, z: 4}
-  m_Center: {x: 0, y: 0, z: 0}
-  m_Area: 1
-  m_AffectedAgents: ffffffff
 --- !u!1 &1699413012
 GameObject:
   m_ObjectHideFlags: 0
@@ -4739,7 +4280,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1710836712}
   - component: {fileID: 1710836713}
-  - component: {fileID: 1710836714}
   m_Layer: 0
   m_Name: "\uC0B013 (8)"
   m_TagString: Mountain
@@ -4814,22 +4354,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &1710836714
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1710836711}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 35e95dc5ff2b64380880dd7ac5922847, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Size: {x: 4, y: 10, z: 4}
-  m_Center: {x: 0, y: 0, z: 0}
-  m_Area: 1
-  m_AffectedAgents: ffffffff
 --- !u!1 &1738804547
 GameObject:
   m_ObjectHideFlags: 0
@@ -4946,7 +4470,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1748387204}
   - component: {fileID: 1748387203}
-  - component: {fileID: 1748387205}
   m_Layer: 0
   m_Name: "\uC0B06"
   m_TagString: Mountain
@@ -5021,22 +4544,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1278009225}
   m_LocalEulerAnglesHint: {x: 45, y: 0, z: 0}
---- !u!114 &1748387205
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1748387202}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 35e95dc5ff2b64380880dd7ac5922847, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Size: {x: 4, y: 10, z: 4}
-  m_Center: {x: 0, y: 0, z: 0}
-  m_Area: 1
-  m_AffectedAgents: ffffffff
 --- !u!1 &1801467030
 GameObject:
   m_ObjectHideFlags: 0
@@ -5220,7 +4727,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1828067681}
   - component: {fileID: 1828067682}
-  - component: {fileID: 1828067683}
   m_Layer: 0
   m_Name: "\uC0B08"
   m_TagString: Mountain
@@ -5295,22 +4801,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &1828067683
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1828067680}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 35e95dc5ff2b64380880dd7ac5922847, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Size: {x: 4, y: 10, z: 4}
-  m_Center: {x: 0, y: 0, z: 0}
-  m_Area: 1
-  m_AffectedAgents: ffffffff
 --- !u!1 &2086290993
 GameObject:
   m_ObjectHideFlags: 0
@@ -5321,7 +4811,6 @@ GameObject:
   m_Component:
   - component: {fileID: 2086290994}
   - component: {fileID: 2086290995}
-  - component: {fileID: 2086290996}
   m_Layer: 0
   m_Name: "\uC0B013 (1)"
   m_TagString: Mountain
@@ -5396,22 +4885,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &2086290996
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2086290993}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 35e95dc5ff2b64380880dd7ac5922847, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Size: {x: 4, y: 10, z: 4}
-  m_Center: {x: 0, y: 0, z: 0}
-  m_Area: 1
-  m_AffectedAgents: ffffffff
 --- !u!1 &2137815688
 GameObject:
   m_ObjectHideFlags: 0
@@ -5422,7 +4895,6 @@ GameObject:
   m_Component:
   - component: {fileID: 2137815689}
   - component: {fileID: 2137815690}
-  - component: {fileID: 2137815691}
   m_Layer: 0
   m_Name: "\uC0B013 (3)"
   m_TagString: Mountain
@@ -5497,22 +4969,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &2137815691
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2137815688}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 35e95dc5ff2b64380880dd7ac5922847, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Size: {x: 4, y: 10, z: 4}
-  m_Center: {x: 0, y: 0, z: 0}
-  m_Area: 1
-  m_AffectedAgents: ffffffff
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
