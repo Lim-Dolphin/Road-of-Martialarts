@@ -28,17 +28,6 @@ public class PlayerStats : MonoBehaviour
     {
         RecoverDashOverTime(); // 약진 게이지 자동 회복
     }
-
-    // 능력치 가져오기
-    public float GetHP() => currentHP;
-    public float GetMaxHP() => maxHP;
-
-    public float GetBattleGauge() => currentBattleGauge;
-    public float GetMaxBattleGauge() => maxBattleGauge;
-
-    public int GetDash() => currentDash;
-    public int GetMaxDash() => maxDash;
-
     // ===== 체력 =====
     // 체력 감소
     public void TakeDamage(float damage)
