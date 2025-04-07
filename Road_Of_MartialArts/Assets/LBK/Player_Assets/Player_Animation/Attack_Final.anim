@@ -21,9 +21,19 @@ AnimationClip:
   - serializedVersion: 2
     curve:
     - time: 0
-      value: {fileID: 21300000, guid: 1014b54d764dc054a8c9a7d5ccad1a0a, type: 3}
+      value: {fileID: 21300000, guid: 43d3c8638d430754197f1bbdd6019a39, type: 3}
+    - time: 0.16666667
+      value: {fileID: 21300000, guid: 1ca4c8949f2167640bdf733af294cbfb, type: 3}
+    - time: 0.33333334
+      value: {fileID: 21300000, guid: a4a7c68cb61ac9b44abedbf2ce136f3c, type: 3}
+    - time: 0.5
+      value: {fileID: 21300000, guid: e579a9c60d9bdb34ca54367f1855cbf7, type: 3}
+    - time: 0.6666667
+      value: {fileID: 21300000, guid: 8e3b7484f62de30448dbe03c6da5453f, type: 3}
+    - time: 0.8333333
+      value: {fileID: 21300000, guid: eab50da339e6eca4195884723dcde134, type: 3}
     - time: 1
-      value: {fileID: 21300000, guid: 1014b54d764dc054a8c9a7d5ccad1a0a, type: 3}
+      value: {fileID: 21300000, guid: c90fedeef302394479f12fd9cf9a096d, type: 3}
     attribute: m_Sprite
     path: 
     classID: 212
@@ -46,8 +56,13 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     pptrCurveMapping:
-    - {fileID: 21300000, guid: 1014b54d764dc054a8c9a7d5ccad1a0a, type: 3}
-    - {fileID: 21300000, guid: 1014b54d764dc054a8c9a7d5ccad1a0a, type: 3}
+    - {fileID: 21300000, guid: 43d3c8638d430754197f1bbdd6019a39, type: 3}
+    - {fileID: 21300000, guid: 1ca4c8949f2167640bdf733af294cbfb, type: 3}
+    - {fileID: 21300000, guid: a4a7c68cb61ac9b44abedbf2ce136f3c, type: 3}
+    - {fileID: 21300000, guid: e579a9c60d9bdb34ca54367f1855cbf7, type: 3}
+    - {fileID: 21300000, guid: 8e3b7484f62de30448dbe03c6da5453f, type: 3}
+    - {fileID: 21300000, guid: eab50da339e6eca4195884723dcde134, type: 3}
+    - {fileID: 21300000, guid: c90fedeef302394479f12fd9cf9a096d, type: 3}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}
@@ -72,4 +87,18 @@ AnimationClip:
   m_EulerEditorCurves: []
   m_HasGenericRootTransform: 0
   m_HasMotionFloatCurves: 0
-  m_Events: []
+  m_Events:
+  - time: 0.16666667
+    functionName: EnableAttackInput
+    data: 
+    objectReferenceParameter: {fileID: 0}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0
+  - time: 0.6666667
+    functionName: NextAction
+    data: 
+    objectReferenceParameter: {fileID: 0}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0
