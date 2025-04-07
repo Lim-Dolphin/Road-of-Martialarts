@@ -14,11 +14,18 @@ public class Player_Combo_Test : MonoBehaviour
     public readonly static int ANISTS_Idle = Animator.StringToHash("Base Layer.IDLE");
     public readonly static int ANISTS_Run = Animator.StringToHash("Base Layer.Run");
     public readonly static int ANISTS_Form = Animator.StringToHash("Base Layer.Combo_System.Form");
-    //콤보 공격 카운트
-    private int Attack_cnt;
+    public readonly static int ANISTS_Attack = Animator.StringToHash("Base Layer.Combo_System.Attack");
+    public readonly static int ANISTS_Power_Attack = Animator.StringToHash("Base Layer.Combo_Ststem.Power_Attack");
 
+    //콤보 공격 카운트
+    [SerializeField]private int Attack_cnt;
+    [SerializeField] private int Power_Attack_cnt;
+
+    //현재 동작 중인 콤보 여부
+    [SerializeField] private bool onAttackCombo;
+    [SerializeField] private bool onPower_AttackCombo;
     //세 여부
-    private bool Formed;
+    [SerializeField] private bool Formed;
 
     //ActionEvent
     public event Action ActionEvent = null;
@@ -26,6 +33,9 @@ public class Player_Combo_Test : MonoBehaviour
     {
         animator = GetComponent<Animator>();
         Attack_cnt = 0;
+        Power_Attack_cnt = 0;
+        onAttackCombo = false;
+        onPower_AttackCombo = false;
         Formed = false;
     }
 
@@ -42,7 +52,8 @@ public class Player_Combo_Test : MonoBehaviour
         }
         else
         {
-            Attack_cnt = 0;
+            Debug.Log("reset state");
+            EndAttackCombo();
         }
     }
 
@@ -63,35 +74,62 @@ public class Player_Combo_Test : MonoBehaviour
     //공격
     public void ActionAttack() {
         AnimatorStateInfo stateInfo = animator.GetCurrentAnimatorStateInfo(0);
-        if (stateInfo.fullPathHash == ANISTS_Idle ||
-            stateInfo.fullPathHash == ANISTS_Run)
+        if (stateInfo.fullPathHash == ANISTS_Idle   ||
+            stateInfo.fullPathHash == ANISTS_Run    ||
+            stateInfo.fullPathHash == ANISTS_Form)
         {
-            playAttack();
+            if (ActionEvent == null)
+            {
+                if (Formed == true)
+                {
+                    ActionEvent += playPower_Attack;
+                }
+                else
+                {
+                    playAttack();
+                }
+            }
         }
         else
         {
             if (atkInputEnabled) 
             {
-                Debug.Log("Combo!" + Attack_cnt);
                 atkInputEnabled = false;
                 if(ActionEvent == null)
                 {
-                    if (Attack_cnt < 4)
+                    if(onAttackCombo)
                     {
-                        ActionEvent += playAttack;
+                        if (Attack_cnt < 4)
+                        {
+                            ActionEvent += playAttack;
+                        }
+                        else
+                        {
+                            ActionEvent += EndAttackCombo;
+                        }
                     }
-                    else
+
+                    if (onPower_AttackCombo) 
                     {
-                        ActionEvent += EndAttackCombo;
+                        if(Power_Attack_cnt < 3)
+                        {
+                            ActionEvent += playPower_Attack;
+                        }
+                        else
+                        {
+                            ActionEvent += EndAttackCombo;
+                        }
                     }
                 }    
             }
         }
     }
 
+    //일반 공격
     private void playAttack()
     {
         animator.SetTrigger("Attack");
+        onAttackCombo = true;
         if (Formed && Attack_cnt == 3)
         {
             Formed = false;
@@ -101,22 +139,60 @@ public class Player_Combo_Test : MonoBehaviour
         Attack_cnt++;
     }
 
+    //강 공격
+    private void playPower_Attack()
+    {
+        animator.SetTrigger("Power_Attack");
+        onPower_AttackCombo = true;
+        if(Formed)
+        {
+            Debug.Log(Power_Attack_cnt);
+            PlayAnimation("Power_Attack_Blend", Power_Attack_cnt);
+            Power_Attack_cnt++;
+        }
+    }
+
     private void EndAttackCombo()
     {
         Attack_cnt = 0;
+        Power_Attack_cnt = 0;
+        onAttackCombo = false;
+        onPower_AttackCombo = false;
+        Formed = false;
+
     }
 
     //세
     public void ActionForm() {
         AnimatorStateInfo stateInfo = animator.GetCurrentAnimatorStateInfo(0);
-        if (stateInfo.fullPathHash != ANISTS_Form)
+        if (stateInfo.fullPathHash == ANISTS_Idle   ||
+            stateInfo.fullPathHash == ANISTS_Run    ||
+            stateInfo.fullPathHash == ANISTS_Attack ||
+            stateInfo.fullPathHash == ANISTS_Power_Attack)
         {
             Formed = true;
 
-            if (Attack_cnt <= 2)
+            if (onAttackCombo)
+            {
+                if (Attack_cnt <= 2)
+                {
+                    playForm();
+                    EndAttackCombo();
+                }
+            }
+
+            if(onPower_AttackCombo)
+            {
+                if(Power_Attack_cnt <= 1)
+                {
+                    playForm();
+                    EndAttackCombo();
+                }
+            }
+
+            if(!onAttackCombo && !onPower_AttackCombo)
             {
                 playForm();
-                EndAttackCombo();
             }
         }
     }
