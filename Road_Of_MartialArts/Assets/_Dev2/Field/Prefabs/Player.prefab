@@ -147,9 +147,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentSceneName: 
-  speed: 20
-  jumpSpeed: 4
+  speed: 30
+  jumpSpeed: 5
   jumpButtonGracePeriod: 1
+  dashSpeed: 100
+  dashDuration: 0.2
+  dashCooldown: 1
 --- !u!54 &8752988055507683625
 Rigidbody:
   m_ObjectHideFlags: 0

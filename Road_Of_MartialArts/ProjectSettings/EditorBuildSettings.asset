@@ -20,4 +20,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/_Dev2/Field/_Scenes/Field_Dungeon_JS.unity
     guid: b2f52b0e90ab95748a87e5e686b7a2c1
+  - enabled: 1
+    path: Assets/_Dev2/OverWorld/scene/JS_Overworld.unity
+    guid: 0ba91f58bb7ac824f9a5b638d4114968
   m_configObjects: {}

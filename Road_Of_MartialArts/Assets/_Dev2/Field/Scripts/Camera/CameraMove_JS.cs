@@ -9,19 +9,35 @@ public class CameraMove_JS : MonoBehaviour
 
     private bool justSnapped = false;
     
-    public static CameraMove_JS instance;
+    private static CameraMove_JS _instance;
 
-    void Start()
+    public static CameraMove_JS instance
     {
-        if (instance == null)
+        get
         {
+            if (_instance == null)
+            {
+                // 씬 내에 이미 존재하는 Move_JS를 찾음
+                _instance = FindObjectOfType<CameraMove_JS>();
+            }
+            return _instance;
+        }
+    }
+    private void Awake()
+    {
+        if (_instance == null)
+        {
+            _instance = this;
             DontDestroyOnLoad(gameObject);
-            instance = this;
         }
         else
         {
             Destroy(gameObject);
         }
+    }
+
+    private void Start()
+    {
         offset = transform.position - target.position;
     }
 
