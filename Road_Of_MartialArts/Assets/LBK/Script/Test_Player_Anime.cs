@@ -7,8 +7,9 @@ public class Test_Player_Anime : MonoBehaviour
 
     private Animator animator;
     private Transform transform;
-    private bool isjump = false;
+    private bool onRT = false;
     private Player_Combo_Test pct;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -27,21 +28,20 @@ public class Test_Player_Anime : MonoBehaviour
 
         }
 
-        if(Input.GetAxis("Horizontal") == 0)
+        if (Input.GetAxis("Horizontal") == 0)
         {
             animator.SetBool("IsRunning", false);
         }
 
-        if(Input.GetAxis("Horizontal") > 0)
+        if (Input.GetAxis("Horizontal") > 0)
         {
             animator.SetBool("IsRunning", true);
             transform.localScale = new Vector3(1, 1, 1);
         }
 
-        if(Input.GetButtonDown("A"))
+        if (Input.GetButtonDown("A"))
         {
             animator.SetTrigger("IsJump");
-            isjump = true;
         }
 
         //가드
@@ -51,19 +51,28 @@ public class Test_Player_Anime : MonoBehaviour
             if (Input.GetButtonDown("B"))
             {
                 Debug.Log("RT+B");
+                onRT = false;
                 pct.ActionThrow();
             }
             //잡기(위치바꾸기)
             else if (Input.GetButtonDown("X"))
             {
                 Debug.Log("RT+X");
+                onRT = false;
                 pct.ActionChangePosition();
             }
             else
             {
-                Debug.Log("RT");
-                pct.ActtionGuard();
+                onRT = true;
+                Debug.Log("push RT");
+                pct.ActionOnGuard();
             }
+        }
+        else if (Input.GetAxis("RT") == 0 && onRT)
+        {
+            Debug.Log("Release RT");
+            onRT = false;
+            pct.ActionReleaseGuard();
         }
         else
         {

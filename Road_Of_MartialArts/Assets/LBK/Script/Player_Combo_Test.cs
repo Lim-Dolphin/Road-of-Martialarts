@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor;
 using UnityEngine;
 using UnityEngine.Rendering;
 
@@ -26,6 +27,8 @@ public class Player_Combo_Test : MonoBehaviour
     [SerializeField] private bool onPower_AttackCombo;
     //세 여부
     [SerializeField] private bool Formed;
+    //방어 여부
+    [SerializeField] private bool Guarded;
 
     //ActionEvent
     public event Action ActionEvent = null;
@@ -37,6 +40,7 @@ public class Player_Combo_Test : MonoBehaviour
         onAttackCombo = false;
         onPower_AttackCombo = false;
         Formed = false;
+        Guarded = false;
     }
 
     //애니메이션용 이벤트 코드
@@ -142,11 +146,11 @@ public class Player_Combo_Test : MonoBehaviour
     //강 공격
     private void playPower_Attack()
     {
-        animator.SetTrigger("Power_Attack");
-        onPower_AttackCombo = true;
         if(Formed)
         {
             Debug.Log(Power_Attack_cnt);
+            animator.SetTrigger("Power_Attack");
+            onPower_AttackCombo = true;
             PlayAnimation("Power_Attack_Blend", Power_Attack_cnt);
             Power_Attack_cnt++;
         }
@@ -203,10 +207,53 @@ public class Player_Combo_Test : MonoBehaviour
     }
 
     //궁극기
-    public void ActionUltimate() { }
+    public void ActionUltimate() 
+    {
+        if (Formed) 
+        {
+            if (ActionEvent == null)
+            {
+                ActionEvent += playUltimate;
+            }
+        }
+    }
 
-    //방어
-    public void ActtionGuard() { }
+    private void playUltimate()
+    {
+        animator.SetTrigger("Ultimate");
+    }
+    //방어 하기
+    public void ActionOnGuard() 
+    {
+        AnimatorStateInfo stateInfo = animator.GetCurrentAnimatorStateInfo(0);
+        if (stateInfo.fullPathHash == ANISTS_Idle ||
+            stateInfo.fullPathHash == ANISTS_Run)
+        {
+            playOnGuard();
+        }
+    }
+
+    private void playOnGuard()
+    {
+        Guarded = true;
+        animator.SetBool("Guard", Guarded);
+    }
+
+    //방어 풀기
+    public void ActionReleaseGuard() 
+    {
+        AnimatorStateInfo stateInfo = animator.GetCurrentAnimatorStateInfo(0);
+        if (stateInfo.fullPathHash == ANISTS_Idle && Guarded)
+        {
+            playReleaseGuard();
+        }
+    }
+
+    private void playReleaseGuard()
+    {
+        Guarded = false;
+        animator.SetBool("Guard", Guarded);
+    }
 
     //잡기(던지기)
     public void ActionThrow() { }
