@@ -16,7 +16,9 @@ public class Player_Combo_Test : MonoBehaviour
     public readonly static int ANISTS_Run = Animator.StringToHash("Base Layer.Run");
     public readonly static int ANISTS_Form = Animator.StringToHash("Base Layer.Combo_System.Form");
     public readonly static int ANISTS_Attack = Animator.StringToHash("Base Layer.Combo_System.Attack");
-    public readonly static int ANISTS_Power_Attack = Animator.StringToHash("Base Layer.Combo_Ststem.Power_Attack");
+    public readonly static int ANISTS_Power_Attack = Animator.StringToHash("Base Layer.Combo_System.Power_Attack");
+    public readonly static int ANISTS_OnGuard = Animator.StringToHash("Base Layer.Combo_System.OnGuard");
+    public readonly static int ANISTS_Guarding = Animator.StringToHash("Base Layer.Combo_System.Guarding");
 
     //콤보 공격 카운트
     [SerializeField]private int Attack_cnt;
@@ -243,8 +245,13 @@ public class Player_Combo_Test : MonoBehaviour
     public void ActionReleaseGuard() 
     {
         AnimatorStateInfo stateInfo = animator.GetCurrentAnimatorStateInfo(0);
-        if (stateInfo.fullPathHash == ANISTS_Idle && Guarded)
+        Debug.Log(stateInfo.fullPathHash);
+        Debug.Log(ANISTS_OnGuard);
+        Debug.Log(ANISTS_Guarding);
+        if ((stateInfo.fullPathHash == ANISTS_OnGuard ||
+            stateInfo.fullPathHash == ANISTS_Guarding )&& Guarded)
         {
+            Debug.Log("Release Guard");
             playReleaseGuard();
         }
     }
@@ -256,8 +263,36 @@ public class Player_Combo_Test : MonoBehaviour
     }
 
     //잡기(던지기)
-    public void ActionThrow() { }
+    public void ActionThrow() 
+    {
+        AnimatorStateInfo stateInfo = animator.GetCurrentAnimatorStateInfo(0);
+        if ((stateInfo.fullPathHash == ANISTS_OnGuard    ||
+            stateInfo.fullPathHash == ANISTS_Guarding)   && Guarded)
+        {
+            playThrow();
+        }
+    }
+
+    private void playThrow()
+    {
+        playReleaseGuard();
+        animator.SetTrigger("Throw");
+    }
 
     //잡기(위치바꾸기)
-    public void ActionChangePosition() { }
+    public void ActionChangePosition() 
+    {
+        AnimatorStateInfo stateInfo = animator.GetCurrentAnimatorStateInfo(0);
+        if ((stateInfo.fullPathHash == ANISTS_OnGuard ||
+            stateInfo.fullPathHash == ANISTS_Guarding )&& Guarded)
+        {
+            playChangePosition();
+        }
+    }
+
+    private void playChangePosition()
+    {
+        playReleaseGuard();
+        animator.SetTrigger("ChangePosition");
+    }
 }
