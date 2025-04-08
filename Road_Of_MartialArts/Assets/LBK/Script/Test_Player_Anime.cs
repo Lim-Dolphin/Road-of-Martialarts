@@ -8,14 +8,14 @@ public class Test_Player_Anime : MonoBehaviour
     private Animator animator;
     private Transform transform;
     private bool onRT = false;
-    private Player_Combo_Test pct;
+    private Player_Combo pct;
 
     // Start is called before the first frame update
     void Start()
     {
         animator = GetComponent<Animator>();
         transform = GetComponent<Transform>();
-        pct = GetComponent<Player_Combo_Test>();
+        pct = GetComponent<Player_Combo>();
     }
 
     // Update is called once per frame

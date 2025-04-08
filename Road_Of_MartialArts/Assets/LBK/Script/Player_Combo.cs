@@ -5,7 +5,7 @@ using UnityEditor;
 using UnityEngine;
 using UnityEngine.Rendering;
 
-public class Player_Combo_Test : MonoBehaviour
+public class Player_Combo : MonoBehaviour
 {
     volatile bool atkInputEnabled = false;
     volatile bool atkInputNow = false;
