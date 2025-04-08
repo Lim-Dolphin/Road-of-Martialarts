@@ -3,21 +3,28 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - NPC
+  - Object
+  - Enemy
+  - Ground
+  - Wall
+  - BackGround
+  - Equipment
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Player
   - Water
   - UI
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
+  - NPC
+  - Object
+  - Enemy
+  - BackGround
+  - Ground
+  - Wall
+  - Equipment
   - 
   - 
   - 
@@ -40,4 +47,7 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Sprite
+    uniqueID: 1877908795
     locked: 0
