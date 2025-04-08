@@ -6,14 +6,14 @@ using UnityEngine;
 
 public class Move : MonoBehaviour
 {
-    [SerializeField] private float hurtDuration = 0.3f; // 피격 시 무적 시간, 멈춤 시간
+    [SerializeField] private float hurtDuration; // 피격 시 무적 시간, 멈춤 시간
 
-    public float speed;
-    public float jumpSpeed;
-    public float jumpButtonGracePeriod;
-    public float dashSpeed;
-    public float dashDuration;
-    public float dashCooldown;
+    [SerializeField] private float speed;
+    [SerializeField] private float jumpSpeed;
+    [SerializeField] private float jumpButtonGracePeriod;
+    [SerializeField] private float dashSpeed;
+    [SerializeField] private float dashDuration;
+    [SerializeField] private float dashCooldown;
 
     private CharacterController characterController;
     private float ySpeed; // 현재 적용받는 y 속도값
@@ -22,8 +22,11 @@ public class Move : MonoBehaviour
     private float? jumpButtonPressedTime; //점프 버튼 누른 시간
     private bool isDashing = false;
     private bool canDash = true;
+
     private PlayerStats playerStats;
     private bool isHurt = false;
+    private Player_Combo pct;
+    private bool onRT = false;
 
     public bool IsJumping => ySpeed > 0.1f && !characterController.isGrounded;
     public bool IsHurt => isHurt;
@@ -34,6 +37,7 @@ public class Move : MonoBehaviour
     {
         characterController = GetComponent<CharacterController>();
         playerStats = GetComponent<PlayerStats>();
+        pct = GetComponent<Player_Combo>();
         originalStepOffset = characterController.stepOffset;
     }
 
@@ -44,7 +48,7 @@ public class Move : MonoBehaviour
         float horizontalInput = Input.GetAxis("Horizontal");
         float verticalInput = Input.GetAxis("Vertical");
 
-        Vector3 movementDirection = new Vector3(horizontalInput, 0, verticalInput);
+        Vector3 movementDirection = new Vector3(horizontalInput*-1, 0, verticalInput*-1);
         float magnitude = Mathf.Clamp01(movementDirection.magnitude) * speed; //정규화 전 대각선 문제 해결을 위한 크기 제한
         movementDirection.Normalize();
 
@@ -91,6 +95,54 @@ public class Move : MonoBehaviour
             Vector3 velocity = movementDirection * magnitude;
             velocity.y = ySpeed;
             characterController.Move(velocity * Time.deltaTime);
+        }
+
+        //가드
+        if (Input.GetAxis("RT") > 0)
+        {
+            //잡기(던지기)
+            if (Input.GetButtonDown("B"))
+            {
+                onRT = false;
+                pct.ActionThrow();
+            }
+            //잡기(위치바꾸기)
+            else if (Input.GetButtonDown("X"))
+            {
+                onRT = false;
+                pct.ActionChangePosition();
+            }
+            else
+            {
+                onRT = true;
+                pct.ActionOnGuard();
+            }
+        }
+        else if (Input.GetAxis("RT") == 0 && onRT)
+        {
+            onRT = false;
+            pct.ActionReleaseGuard();
+        }
+        else
+        {
+            //공격
+            if (Input.GetButtonDown("B"))
+            {
+                pct.ActionAttack();
+            }
+
+            //세
+            if (Input.GetButtonDown("X"))
+            {
+                pct.ActionForm();
+            }
+
+            //궁극기
+            if (Input.GetButtonDown("Y"))
+            {
+                pct.ActionUltimate();
+            }
+
         }
     }
     private IEnumerator Dash(Vector3 dashDirection)
