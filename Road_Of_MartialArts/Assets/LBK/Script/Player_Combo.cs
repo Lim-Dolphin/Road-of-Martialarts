@@ -21,8 +21,10 @@ public class Player_Combo : MonoBehaviour
     public readonly static int ANISTS_Guarding = Animator.StringToHash("Base Layer.Combo_System.Guarding");
 
     //콤보 공격 카운트
-    [SerializeField]private int Attack_cnt;
+    [SerializeField] private int Attack_cnt;
     [SerializeField] private int Power_Attack_cnt;
+    //선택한 세
+    [SerializeField] private int Form_num;
 
     //현재 동작 중인 콤보 여부
     [SerializeField] private bool onAttackCombo;
@@ -43,6 +45,8 @@ public class Player_Combo : MonoBehaviour
         onPower_AttackCombo = false;
         Formed = false;
         Guarded = false;
+
+        Form_num = 0;
     }
 
     //애니메이션용 이벤트 코드
@@ -206,6 +210,7 @@ public class Player_Combo : MonoBehaviour
     private void playForm()
     {
         animator.SetTrigger("Form");
+        PlayAnimation("Form_Blend", Form_num);
     }
 
     //궁극기
