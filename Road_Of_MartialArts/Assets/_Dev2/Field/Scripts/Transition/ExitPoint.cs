@@ -9,9 +9,10 @@ public class ExitPoint : MonoBehaviour
     private string transferSceneName;
 
     private Move_JS player;
-    void Start()
+
+    private void Start()
     {
-        player = FindObjectOfType<Move_JS>();
+        player = Move_JS.instance;
     }
 
     private void OnTriggerEnter(Collider other)
