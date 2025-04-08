@@ -6,6 +6,8 @@ using UnityEngine;
 
 public class Move : MonoBehaviour
 {
+    [SerializeField] private float hurtDuration = 0.3f; // 피격 시 무적 시간, 멈춤 시간
+
     public float speed;
     public float jumpSpeed;
     public float jumpButtonGracePeriod;
@@ -20,15 +22,25 @@ public class Move : MonoBehaviour
     private float? jumpButtonPressedTime; //점프 버튼 누른 시간
     private bool isDashing = false;
     private bool canDash = true;
+    private PlayerStats playerStats;
+    private bool isHurt = false;
+
+    public bool IsJumping => ySpeed > 0.1f && !characterController.isGrounded;
+    public bool IsHurt => isHurt;
+
+    
 
     private void Start()
     {
         characterController = GetComponent<CharacterController>();
+        playerStats = GetComponent<PlayerStats>();
         originalStepOffset = characterController.stepOffset;
     }
 
     void Update()
     {
+        if (isHurt) return;
+
         float horizontalInput = Input.GetAxis("Horizontal");
         float verticalInput = Input.GetAxis("Vertical");
 
@@ -68,7 +80,10 @@ public class Move : MonoBehaviour
         // 약진 (순간 회피)
         if (Input.GetAxis("LT") > 0.1f && characterController.isGrounded && !isDashing && canDash)
         {
-            StartCoroutine(Dash(movementDirection));
+            if (playerStats != null && playerStats.UseDash()) //약진 게이지 1칸 차감 시도
+            {
+                StartCoroutine(Dash(movementDirection));
+            }
         }
 
         if (!isDashing)
@@ -92,8 +107,40 @@ public class Move : MonoBehaviour
         }
 
         isDashing = false;
-        
+
         yield return new WaitForSeconds(dashCooldown); // 약진 후 쿨타임 적용
         canDash = true;
     }
+    public void TakeHit()
+    {
+        if (!isHurt)
+        {
+            StartCoroutine(HurtRoutine());
+        }
+    }
+
+    private IEnumerator HurtRoutine()
+    {
+        isHurt = true;
+        canDash = false;
+        
+        yield return new WaitForSeconds(hurtDuration); // 피격 시 잠깐 멈추고 넉백 or 무력화
+
+        isHurt = false;
+        canDash = true;
+    }
+
+    public void OnHit(float damage)
+    {
+        Debug.Log("플레이어 OnHit 호출됨! 피해량: " + damage);
+        PlayerStats stats = GetComponent<PlayerStats>();
+
+        if (stats != null)
+        {
+            stats.TakeDamage(damage);
+        }
+
+        TakeHit();
+    }
+
 }
