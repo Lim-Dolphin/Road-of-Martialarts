@@ -24,7 +24,7 @@ public class Test_Player_Anime : MonoBehaviour
         if (Input.GetAxis("Horizontal") < 0)
         {
             animator.SetBool("IsRunning", true);
-            transform.localScale = new Vector3(-1, 1, 1);
+            transform.localScale = new Vector3(1, 1, 1);
 
         }
 
@@ -36,7 +36,7 @@ public class Test_Player_Anime : MonoBehaviour
         if (Input.GetAxis("Horizontal") > 0)
         {
             animator.SetBool("IsRunning", true);
-            transform.localScale = new Vector3(1, 1, 1);
+            transform.localScale = new Vector3(-1, 1, 1);
         }
 
         if (Input.GetButtonDown("A"))
