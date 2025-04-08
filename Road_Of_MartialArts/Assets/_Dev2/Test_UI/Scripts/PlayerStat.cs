@@ -22,7 +22,7 @@ public class PlayerStats : MonoBehaviour
     }
     private void Start()
     {
-    Invoke(nameof(UpdateHUD), 0.1f); // 0.1초 지연 → HUD 초기화 타이밍 보장
+        Invoke(nameof(UpdateHUD), 0.1f); // 0.1초 지연 → HUD 초기화 타이밍 보장
     }
     private void Update()
     {
@@ -85,7 +85,7 @@ public class PlayerStats : MonoBehaviour
     }
     
     // 약진 게이지 자동 회복
-    public void RecoverDashOverTime()
+    private void RecoverDashOverTime()
     {
         if (currentDash < maxDash) // 약진 게이지가 MAX가 아니라면 dashTime(5초)만큼의 시간 뒤 회복
         {
@@ -111,7 +111,7 @@ public class PlayerStats : MonoBehaviour
         UpdateHUD();
     }
     // HUD 업데이트
-    void UpdateHUD()
+    private void UpdateHUD()
     {
         float hpRatio = currentHP / maxHP;
         float maxBattleGaugeRatio = currentBattleGauge / maxBattleGauge;
