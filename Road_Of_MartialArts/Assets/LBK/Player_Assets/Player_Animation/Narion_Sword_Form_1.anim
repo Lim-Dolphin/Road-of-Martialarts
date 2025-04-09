@@ -6,7 +6,7 @@ AnimationClip:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Attack_1
+  m_Name: Narion_Sword_Form_1
   serializedVersion: 7
   m_Legacy: 0
   m_Compressed: 0
@@ -20,20 +20,14 @@ AnimationClip:
   m_PPtrCurves:
   - serializedVersion: 2
     curve:
-    - time: 0
-      value: {fileID: 21300000, guid: 88e4f7e5737d05e46848112c94ed21c7, type: 3}
-    - time: 0.16666667
-      value: {fileID: 21300000, guid: 7bbe8191dffce6b4d90ba769f6053cc8, type: 3}
-    - time: 0.33333334
-      value: {fileID: 21300000, guid: 56619b2589785a94b8126366947fb0f7, type: 3}
+    - time: 0.016666668
+      value: {fileID: 21300000, guid: aad6b71dcf7bed14c94a8edcc48effc9, type: 3}
+    - time: 0.083333336
+      value: {fileID: 21300000, guid: baf413a2c2688d246b927bbe69de8730, type: 3}
+    - time: 0.41666666
+      value: {fileID: 21300000, guid: 39a8403e1c273c544849b7535f16d419, type: 3}
     - time: 0.5
-      value: {fileID: 21300000, guid: 9878ff659dab88245963dc21c340940d, type: 3}
-    - time: 0.6666667
-      value: {fileID: 21300000, guid: 046b80eb04e47f8499a33ce9285a3d54, type: 3}
-    - time: 0.8333333
-      value: {fileID: 21300000, guid: ba48b86e210db2c499424eed2b9fe8d3, type: 3}
-    - time: 1
-      value: {fileID: 21300000, guid: 07b059e2151f7af418688faa66b47979, type: 3}
+      value: {fileID: 21300000, guid: 02e247b5d4c0f1e4ebe1fe32f792daa1, type: 3}
     attribute: m_Sprite
     path: 
     classID: 212
@@ -56,19 +50,16 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     pptrCurveMapping:
-    - {fileID: 21300000, guid: 88e4f7e5737d05e46848112c94ed21c7, type: 3}
-    - {fileID: 21300000, guid: 7bbe8191dffce6b4d90ba769f6053cc8, type: 3}
-    - {fileID: 21300000, guid: 56619b2589785a94b8126366947fb0f7, type: 3}
-    - {fileID: 21300000, guid: 9878ff659dab88245963dc21c340940d, type: 3}
-    - {fileID: 21300000, guid: 046b80eb04e47f8499a33ce9285a3d54, type: 3}
-    - {fileID: 21300000, guid: ba48b86e210db2c499424eed2b9fe8d3, type: 3}
-    - {fileID: 21300000, guid: 07b059e2151f7af418688faa66b47979, type: 3}
+    - {fileID: 21300000, guid: aad6b71dcf7bed14c94a8edcc48effc9, type: 3}
+    - {fileID: 21300000, guid: baf413a2c2688d246b927bbe69de8730, type: 3}
+    - {fileID: 21300000, guid: 39a8403e1c273c544849b7535f16d419, type: 3}
+    - {fileID: 21300000, guid: 02e247b5d4c0f1e4ebe1fe32f792daa1, type: 3}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
-    m_StopTime: 1.0166667
+    m_StopTime: 0.51666665
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0
@@ -88,15 +79,22 @@ AnimationClip:
   m_HasGenericRootTransform: 0
   m_HasMotionFloatCurves: 0
   m_Events:
-  - time: 0.16666667
+  - time: 0.083333336
     functionName: EnableAttackInput
     data: 
     objectReferenceParameter: {fileID: 0}
     floatParameter: 0
     intParameter: 0
     messageOptions: 0
-  - time: 0.6666667
+  - time: 0.41666666
     functionName: NextAction
+    data: 
+    objectReferenceParameter: {fileID: 0}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0
+  - time: 0.5
+    functionName: DisableForm
     data: 
     objectReferenceParameter: {fileID: 0}
     floatParameter: 0

@@ -106,7 +106,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4364856200700960209}
-  - component: {fileID: 5306353446342053325}
   - component: {fileID: 8752988055507683625}
   - component: {fileID: 978098321666629223}
   - component: {fileID: 8501971059036390069}
@@ -134,25 +133,6 @@ Transform:
   - {fileID: 1666674076889158718}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &5306353446342053325
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3447959658725559365}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0f4438f0bccd11c41b28c0df101b4769, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  currentSceneName: 
-  speed: 30
-  jumpSpeed: 5
-  jumpButtonGracePeriod: 1
-  dashSpeed: 100
-  dashDuration: 0.2
-  dashCooldown: 1
 --- !u!54 &8752988055507683625
 Rigidbody:
   m_ObjectHideFlags: 0
