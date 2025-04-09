@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PlayerGuard_JS : MonoBehaviour
 {
-    private PlayerStats playerStats;
+    private PlayerState playerStats;
     private bool isGuarding;
     Renderer childRenderer;
     private Color originalColor;
@@ -18,7 +18,7 @@ public class PlayerGuard_JS : MonoBehaviour
     }
     void Start()
     {
-        playerStats = GetComponent<PlayerStats>(); // player Ω∫≈» ø¨∞·
+        playerStats = GetComponent<PlayerState>(); // player Ω∫≈» ø¨∞·
         childRenderer = GetComponentInChildren<Renderer>();
         originalColor = childRenderer.material.color;
     }

@@ -24,7 +24,7 @@ public class Move_JS : MonoBehaviour
     private bool isDashing = false;
     private bool canDash = true;
 
-    private PlayerStats playerStats;
+    private PlayerState playerStats;
 
     private static Move_JS _instance;
 
@@ -65,7 +65,7 @@ public class Move_JS : MonoBehaviour
     {
         characterController = GetComponent<CharacterController>();
         originalStepOffset = characterController.stepOffset;
-        playerStats = GetComponent<PlayerStats>();
+        playerStats = GetComponent<PlayerState>();
     }
 
     void Update()

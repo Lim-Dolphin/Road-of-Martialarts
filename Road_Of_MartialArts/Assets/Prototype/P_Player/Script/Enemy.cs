@@ -36,7 +36,7 @@ public class Enemy : MonoBehaviour
         if (distance <= attackRange)
         {
             canAttack = false;
-            Move move = player.GetComponent<Move>();
+            playerController move = player.GetComponent<playerController>();
             if (move != null)
             {
                 move.OnHit(attackDamage); // Move에서 체력 처리 및 피격 트리거
