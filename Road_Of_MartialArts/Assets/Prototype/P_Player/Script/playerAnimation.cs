@@ -5,6 +5,7 @@ using UnityEngine;
 
 public class playerAnimation : MonoBehaviour
 {
+    public GameObject Player_Sprite;
     private Animator animator;
     
     //private Move moveScript;
@@ -14,7 +15,7 @@ public class playerAnimation : MonoBehaviour
 
     void Start()
     {
-        animator = GetComponent<Animator>();
+        animator = Player_Sprite.GetComponent<Animator>();
         //moveScript = GetComponent<Move>(); // Move 스크립트 참조
         playerController = GetComponent<playerController>();
     }

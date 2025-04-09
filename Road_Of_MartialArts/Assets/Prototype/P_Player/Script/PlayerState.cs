@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class PlayerStats : MonoBehaviour
+public class PlayerState : MonoBehaviour
 {
     private float maxHP = 100f;
     private float currentHP;
