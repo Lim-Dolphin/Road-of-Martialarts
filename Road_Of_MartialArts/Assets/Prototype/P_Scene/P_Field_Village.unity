@@ -1902,11 +1902,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currentSceneName: 
   speed: 30
-  jumpSpeed: 5
-  jumpButtonGracePeriod: 1
-  dashSpeed: 10
-  dashDuration: 0.4
-  dashCooldown: 1
+  jumpSpeed: 0
+  jumpButtonGracePeriod: 0
+  dashSpeed: 0
+  dashDuration: 0
+  dashCooldown: 0
 --- !u!4 &1076251692 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4364856200700960209, guid: 801511f2a869c3a46ae4348d30784f2f, type: 3}
