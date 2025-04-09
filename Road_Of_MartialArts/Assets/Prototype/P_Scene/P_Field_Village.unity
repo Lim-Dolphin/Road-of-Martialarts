@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18085732, g: 0.22639614, b: 0.3072136, a: 1}
+  m_IndirectSpecularColor: {r: 0.18085784, g: 0.22639677, b: 0.30721492, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1888,7 +1888,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 343c270aad041974290f8e9c873ab61b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &1076251693
+--- !u!114 &1076251688
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1897,49 +1897,21 @@ MonoBehaviour:
   m_GameObject: {fileID: 796468020}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9c8120dcae9ce6c41936c740d93f58ca, type: 3}
+  m_Script: {fileID: 11500000, guid: 0f4438f0bccd11c41b28c0df101b4769, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hurtDuration: 0.1
+  currentSceneName: 
   speed: 30
-  jumpSpeed: 15
+  jumpSpeed: 5
   jumpButtonGracePeriod: 1
-  dashSpeed: 100
-  dashDuration: 0.2
+  dashSpeed: 10
+  dashDuration: 0.4
   dashCooldown: 1
---- !u!114 &1076251698
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+--- !u!4 &1076251692 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4364856200700960209, guid: 801511f2a869c3a46ae4348d30784f2f, type: 3}
+  m_PrefabInstance: {fileID: 6433654180395158446}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 796468020}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c321977b6877a4a49933d68590a890ca, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!95 &1076251699
-Animator:
-  serializedVersion: 5
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 796468020}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: ff039161dba9c714d83e2a056c38dcf5, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &1106712412
 GameObject:
   m_ObjectHideFlags: 0
@@ -3210,7 +3182,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6a82c5c82bae82a4eac6d9b857a07d46, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 0}
+  target: {fileID: 1076251692}
   minBounds: {x: -90, y: 0}
   maxBounds: {x: 270, y: 0}
 --- !u!114 &2129235134
@@ -3751,14 +3723,8 @@ PrefabInstance:
       insertIndex: 2
       addedObject: {fileID: 1076251686}
     - targetCorrespondingSourceObject: {fileID: 3447959658725559365, guid: 801511f2a869c3a46ae4348d30784f2f, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1076251693}
-    - targetCorrespondingSourceObject: {fileID: 3447959658725559365, guid: 801511f2a869c3a46ae4348d30784f2f, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1076251699}
-    - targetCorrespondingSourceObject: {fileID: 3447959658725559365, guid: 801511f2a869c3a46ae4348d30784f2f, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1076251698}
+      insertIndex: 3
+      addedObject: {fileID: 1076251688}
   m_SourcePrefab: {fileID: 100100000, guid: 801511f2a869c3a46ae4348d30784f2f, type: 3}
 --- !u!1001 &7216868583852552103
 PrefabInstance:
