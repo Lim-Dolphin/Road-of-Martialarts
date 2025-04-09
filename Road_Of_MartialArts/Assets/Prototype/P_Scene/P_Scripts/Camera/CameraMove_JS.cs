@@ -5,7 +5,8 @@ public class CameraMove_JS : MonoBehaviour
     public Transform target;
     public Vector2 minBounds; // 카메라 이동 가능 최소 좌표
     public Vector2 maxBounds; // 카메라 이동 가능 최대 좌표
-    private Vector3 offset; 
+    [SerializeField] private Vector3 offset;    //플레이어와 카메라의 offset(normal vector)
+    public float distance = 1; //카메라와 플레이어의 거리
 
     private bool justSnapped = false;
     
@@ -39,13 +40,14 @@ public class CameraMove_JS : MonoBehaviour
     private void Start()
     {
         offset = transform.position - target.position;
+        Debug.Log(offset.x + "," + offset.y + "," + offset.z);
     }
 
     void LateUpdate()
     {
         if (target == null) return;
 
-        Vector3 desiredPosition = target.position + offset;
+        Vector3 desiredPosition = target.position + (offset*distance);
 
         desiredPosition.x = Mathf.Clamp(desiredPosition.x, minBounds.x, maxBounds.x);
         //desiredPosition.y = Mathf.Clamp(desiredPosition.y, minBounds.y, maxBounds.y);
