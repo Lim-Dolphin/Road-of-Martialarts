@@ -6,13 +6,17 @@ using UnityEngine;
 public class playerAnimation : MonoBehaviour
 {
     private Animator animator;
-    private Move moveScript;
+    
+    //private Move moveScript;
+    private playerController playerController;
+    
     private bool wasHurt = false;
 
     void Start()
     {
         animator = GetComponent<Animator>();
-        moveScript = GetComponent<Move>(); // Move 스크립트 참조
+        //moveScript = GetComponent<Move>(); // Move 스크립트 참조
+        playerController = GetComponent<playerController>();
     }
 
     // Update is called once per frame
@@ -23,7 +27,7 @@ public class playerAnimation : MonoBehaviour
         {
             animator.SetBool("IsRunning", true);
             Vector3 scale = transform.localScale;
-            scale.x = Mathf.Abs(scale.x) * (horizontal > 0 ? -1 : 1);
+            scale.x = Mathf.Abs(scale.x) * (horizontal > 0 ? 1 : -1);
             transform.localScale = scale;
         }
         else
@@ -31,10 +35,13 @@ public class playerAnimation : MonoBehaviour
             animator.SetBool("IsRunning", false);
         }
 
-        animator.SetBool("IsJump", moveScript.IsJumping);
+        //animator.SetBool("IsJump", moveScript.IsJumping);
+        
+        animator.SetBool("IsJump", playerController.IsJumping());
+        
 
         // 피격 트리거는 isHurt 상태가 처음 true로 바뀌었을 때만 실행
-        if (moveScript.IsHurt && !wasHurt)
+        /*if (moveScript.IsHurt && !wasHurt)
         {
             animator.SetTrigger("IsHurt");
             wasHurt = true;
@@ -42,10 +49,22 @@ public class playerAnimation : MonoBehaviour
         else if (!moveScript.IsHurt)
         {
             wasHurt = false;
+        }*/
+        if ( playerController.IsHurt())
+        {
+            if (!wasHurt)
+            {
+                animator.SetTrigger("IsHurt");
+                wasHurt = true;
+            }
+        }
+        else
+        {
+            wasHurt = false;
         }
 
 
-        //animator.SetBool("IsDashing", moveScript.IsDashing);
+        //animator.SetBool("IsDashing", playerController.IsDashing());
 
 
     }
