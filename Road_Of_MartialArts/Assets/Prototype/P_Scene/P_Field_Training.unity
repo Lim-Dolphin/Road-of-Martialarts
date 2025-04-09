@@ -651,7 +651,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f09f72f6881535d44a4fe4cddd052d37, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  previousSceneName: Field_Village_JS
+  previousSceneName: P_Field_Village
 --- !u!1 &761457189
 GameObject:
   m_ObjectHideFlags: 0
@@ -1449,7 +1449,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eb102f09c23cd1040ba3b0ee267400b1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  transferSceneName: Field_Village_JS
+  transferSceneName: P_Field_Village
 --- !u!65 &1550963808
 BoxCollider:
   m_ObjectHideFlags: 0

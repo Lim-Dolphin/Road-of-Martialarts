@@ -16,13 +16,13 @@ public class StartPoint : MonoBehaviour
          player = Move_JS.instance;
          cam = CameraMove_JS.instance;
 
-        if (SceneManager.GetActiveScene().name != "JS_Overworld") // 오버월드 아니면 활성화
+        if (SceneManager.GetActiveScene().name != "P_Overworld") // 오버월드 아니면 활성화
         {
             // 필드에선 필드 카메라, 캐릭터 활성화
             player.gameObject.SetActive(true);
             cam.gameObject.SetActive(true);
         }
-        else if (SceneManager.GetActiveScene().name == "JS_Overworld") // 오버월드면 비활성화
+        else if (SceneManager.GetActiveScene().name == "P_Overworld") // 오버월드면 비활성화
         {
             // 필드에선 필드 카메라, 캐릭터 활성화
             player.gameObject.SetActive(false);
