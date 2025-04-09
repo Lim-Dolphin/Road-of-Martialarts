@@ -23,7 +23,7 @@ public class Move : MonoBehaviour
     private bool isDashing = false;
     private bool canDash = true;
 
-    private PlayerStats playerStats;
+    private PlayerState playerStats;
     private bool isHurt = false;
     private Player_Combo pct;
     private bool onRT = false;
@@ -36,7 +36,7 @@ public class Move : MonoBehaviour
     private void Start()
     {
         characterController = GetComponent<CharacterController>();
-        playerStats = GetComponent<PlayerStats>();
+        playerStats = GetComponent<PlayerState>();
         pct = GetComponent<Player_Combo>();
         originalStepOffset = characterController.stepOffset;
     }
@@ -185,7 +185,7 @@ public class Move : MonoBehaviour
     public void OnHit(float damage)
     {
         Debug.Log("플레이어 OnHit 호출됨! 피해량: " + damage);
-        PlayerStats stats = GetComponent<PlayerStats>();
+        PlayerState stats = GetComponent<PlayerState>();
 
         if (stats != null)
         {

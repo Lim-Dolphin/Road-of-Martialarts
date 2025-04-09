@@ -29,11 +29,11 @@ public class playerController : MonoBehaviour
     private playerDash dash;
     private playerHurtHandler hurtHandler;
     private Player_Combo pct;
-    private PlayerStats playerStats;
+    private PlayerState playerStats;
     private bool onRT = false;
 
-
-
+    public GameObject Player_Sprite;
+    public GameObject Player_State;
 
     private void Start()
     {
@@ -44,8 +44,8 @@ public class playerController : MonoBehaviour
         movement = GetComponent<playerMovement>();
         dash = GetComponent<playerDash>();
         hurtHandler = GetComponent<playerHurtHandler>();
-        playerStats = GetComponent<PlayerStats>();
-        pct = GetComponent<Player_Combo>();
+        playerStats = Player_State.GetComponent<PlayerState>();
+        pct = Player_Sprite.GetComponent<Player_Combo>();
 
         movement.Init(characterController, speed, jumpSpeed, jumpButtonGracePeriod);
         dash.Init(characterController, dashSpeed, dashDuration, dashCooldown);
@@ -122,7 +122,6 @@ public class playerController : MonoBehaviour
 
     public void OnHit(float damage)
     {
-        Debug.Log("플레이어 OnHit 호출됨! 피해량: " + damage);
         if (playerStats != null)
         {
             playerStats.TakeDamage(damage);
@@ -145,4 +144,5 @@ public class playerController : MonoBehaviour
     {
         return dash != null && dash.IsDashing;
     }
+
 }
