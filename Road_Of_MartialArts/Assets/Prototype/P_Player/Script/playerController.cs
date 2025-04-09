@@ -122,7 +122,6 @@ public class playerController : MonoBehaviour
 
     public void OnHit(float damage)
     {
-        Debug.Log("플레이어 OnHit 호출됨! 피해량: " + damage);
         if (playerStats != null)
         {
             playerStats.TakeDamage(damage);

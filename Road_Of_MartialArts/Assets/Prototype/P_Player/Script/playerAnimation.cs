@@ -55,6 +55,7 @@ public class playerAnimation : MonoBehaviour
         {
             if (!wasHurt)
             {
+                Debug.Log("Hurt Animation");
                 animator.SetTrigger("IsHurt");
                 wasHurt = true;
             }

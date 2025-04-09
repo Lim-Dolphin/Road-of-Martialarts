@@ -33,6 +33,7 @@ public class PlayerState : MonoBehaviour
     public void TakeDamage(float damage)
     {
         currentHP = Mathf.Max(currentHP - damage, 0f); // 데미지가 음수가 될 수 없게끔 Mathf.Max() 사용
+        Debug.Log("플레이어 OnHit 호출됨! 피해량: " + currentHP);
         UpdateHUD();
 
         if (currentHP <= 0)
