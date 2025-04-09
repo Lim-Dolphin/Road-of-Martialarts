@@ -22,9 +22,9 @@ public class PlayerController : MonoBehaviour
         float moveX = Input.GetAxisRaw("Horizontal");
         float moveZ = Input.GetAxisRaw("Vertical");
 
-        moveInput = new Vector3(moveX, 0, moveZ).normalized * moveSpeed;
+        moveInput = new Vector3(-moveX, 0, -moveZ).normalized * moveSpeed;
 
-        if (Input.GetKeyDown(KeyCode.E))
+        if (Input.GetKeyDown(KeyCode.F))
         {
             playerStats.UseDash();
         }

@@ -395,7 +395,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f09f72f6881535d44a4fe4cddd052d37, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  previousSceneName: JS_Overworld
+  previousSceneName: P_Overworld
 --- !u!65 &317803689
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1149,7 +1149,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f09f72f6881535d44a4fe4cddd052d37, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  previousSceneName: Field_Dungeon_JS
+  previousSceneName: P_Field_Dungeon
 --- !u!1 &796468020 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3447959658725559365, guid: 801511f2a869c3a46ae4348d30784f2f, type: 3}
@@ -1239,6 +1239,32 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &815849126 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1888598786533910736, guid: 801511f2a869c3a46ae4348d30784f2f, type: 3}
+  m_PrefabInstance: {fileID: 6433654180395158446}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &815849130
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 815849126}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: ff039161dba9c714d83e2a056c38dcf5, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &846747936
 GameObject:
   m_ObjectHideFlags: 0
@@ -1779,7 +1805,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f09f72f6881535d44a4fe4cddd052d37, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  previousSceneName: Field_Training_JS
+  previousSceneName: P_Field_Training
 --- !u!1 &1069588049
 GameObject:
   m_ObjectHideFlags: 0
@@ -1907,11 +1933,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currentSceneName: 
   speed: 30
-  jumpSpeed: 0
+  jumpSpeed: 5
   jumpButtonGracePeriod: 0
-  dashSpeed: 0
-  dashDuration: 0
-  dashCooldown: 0
+  dashSpeed: 30
+  dashDuration: 0.4
+  dashCooldown: 1
 --- !u!1 &1106712412
 GameObject:
   m_ObjectHideFlags: 0
@@ -2315,7 +2341,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eb102f09c23cd1040ba3b0ee267400b1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  transferSceneName: Field_Training_JS
+  transferSceneName: P_Field_Training
 --- !u!65 &1250765546
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2507,7 +2533,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eb102f09c23cd1040ba3b0ee267400b1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  transferSceneName: JS_Overworld
+  transferSceneName: P_Overworld
 --- !u!65 &1432202218
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3725,6 +3751,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 3447959658725559365, guid: 801511f2a869c3a46ae4348d30784f2f, type: 3}
       insertIndex: 3
       addedObject: {fileID: 1076251686}
+    - targetCorrespondingSourceObject: {fileID: 1888598786533910736, guid: 801511f2a869c3a46ae4348d30784f2f, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 815849130}
   m_SourcePrefab: {fileID: 100100000, guid: 801511f2a869c3a46ae4348d30784f2f, type: 3}
 --- !u!1001 &7216868583852552103
 PrefabInstance:

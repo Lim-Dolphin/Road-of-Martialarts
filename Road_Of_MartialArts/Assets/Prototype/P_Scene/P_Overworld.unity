@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18175638, g: 0.22742356, b: 0.3074217, a: 1}
+  m_IndirectSpecularColor: {r: 0.18175596, g: 0.22742295, b: 0.3074204, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -4681,7 +4681,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eb102f09c23cd1040ba3b0ee267400b1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  transferSceneName: Field_Dungeon_JS
+  transferSceneName: P_Field_Dungeon
 --- !u!1 &1738804547
 GameObject:
   m_ObjectHideFlags: 0
@@ -5173,7 +5173,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f09f72f6881535d44a4fe4cddd052d37, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  previousSceneName: Field_Village_JS
+  previousSceneName: P_Field_Village
 --- !u!1 &2086290993
 GameObject:
   m_ObjectHideFlags: 0
