@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18175596, g: 0.22742295, b: 0.3074204, a: 1}
+  m_IndirectSpecularColor: {r: 0.18175638, g: 0.22742356, b: 0.3074217, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -3058,11 +3058,12 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1201240855}
+  - component: {fileID: 1201240858}
   - component: {fileID: 1201240856}
   - component: {fileID: 1201240857}
   - component: {fileID: 1201240854}
   - component: {fileID: 1201240853}
-  - component: {fileID: 1201240852}
+  - component: {fileID: 1201240859}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -3070,19 +3071,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1201240852
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1201240851}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c5fa4b7c971e32548b43a80a894d47b9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  moveSpeed: 10
 --- !u!54 &1201240853
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -3205,6 +3193,50 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4794b84a669c0d84095e7c6e39767245, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1201240858
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1201240851}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f4438f0bccd11c41b28c0df101b4769, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 10
+  jumpSpeed: 0
+  jumpButtonGracePeriod: 0
+  dashSpeed: 0
+  dashDuration: 0
+  dashCooldown: 0
+--- !u!143 &1201240859
+CharacterController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1201240851}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Height: 3.48
+  m_Radius: 0.89
+  m_SlopeLimit: 45
+  m_StepOffset: 0.3
+  m_SkinWidth: 0.08
+  m_MinMoveDistance: 0.001
+  m_Center: {x: 0, y: 0.27, z: 0}
 --- !u!1 &1255361958
 GameObject:
   m_ObjectHideFlags: 0
@@ -5155,7 +5187,7 @@ Transform:
   m_GameObject: {fileID: 2073881529}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1.97, z: 0}
+  m_LocalPosition: {x: 0, y: 1.97, z: -2.36}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
