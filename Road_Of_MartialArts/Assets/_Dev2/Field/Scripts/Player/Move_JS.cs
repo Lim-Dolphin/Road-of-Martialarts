@@ -7,8 +7,6 @@ using static UnityEditor.ShaderGraph.Internal.KeywordDependentCollection;
 
 public class Move_JS : MonoBehaviour
 {
-    public string currentSceneName; // ExitPoint 스크립트에 있는 transferSceneName 변수의 값 저장
-
     public float speed;
     public float jumpSpeed;
     public float jumpButtonGracePeriod;
@@ -25,34 +23,6 @@ public class Move_JS : MonoBehaviour
     private bool canDash = true;
 
     private PlayerState playerStats;
-
-    private static Move_JS _instance;
-
-    public static Move_JS instance
-    {
-        get
-        {
-            if (_instance == null)
-            {
-                // 씬 내에 이미 존재하는 Move_JS를 찾음
-                _instance = FindObjectOfType<Move_JS>();
-            }
-            return _instance;
-        }
-    }
-
-    private void Awake()
-    {
-        if (_instance == null)
-        {
-            _instance = this;
-            DontDestroyOnLoad(gameObject);
-        }
-        else
-        {
-            Destroy(gameObject);
-        }
-    }
 
     private void OnEnable()
     {
@@ -73,7 +43,7 @@ public class Move_JS : MonoBehaviour
         float horizontalInput = Input.GetAxis("Horizontal");
         float verticalInput = Input.GetAxis("Vertical");
 
-        Vector3 movementDirection = new Vector3(-horizontalInput, 0, -verticalInput);
+        Vector3 movementDirection = new Vector3(horizontalInput, 0, verticalInput);
         float magnitude = Mathf.Clamp01(movementDirection.magnitude) * speed; //정규화 전 대각선 문제 해결을 위한 크기 제한
         movementDirection.Normalize();
 

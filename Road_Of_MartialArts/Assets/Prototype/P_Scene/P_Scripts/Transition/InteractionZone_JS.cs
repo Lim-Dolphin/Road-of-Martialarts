@@ -55,7 +55,7 @@ public class InteractionZone_JS : MonoBehaviour
     public void EnterScene()
     {
         Time.timeScale = 1f;              // 씬 전환 전 시간 복구
-        Move_JS.instance.currentSceneName = SceneManager.GetActiveScene().name;
-        SceneManager.LoadScene("Field_Village_JS"); // 씬 전환환
+        Player_instance_JS.instance.saveSceneName = SceneManager.GetActiveScene().name;
+        SceneManager.LoadScene("P_Field_Village"); // 씬 전환환
     }
 }
