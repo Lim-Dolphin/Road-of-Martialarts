@@ -54,6 +54,7 @@ public class Player_Combo : MonoBehaviour
         atkInputEnabled = true;
     }
     public void NextAction() {
+        Debug.Log("Next_Action");
         if (ActionEvent != null)
         {
             Debug.Log("Play Combo Animation");
@@ -169,6 +170,7 @@ public class Player_Combo : MonoBehaviour
         onAttackCombo = false;
         onPower_AttackCombo = false;
         Formed = false;
+        ActionEvent = null;
 
     }
 
