@@ -60,6 +60,7 @@ GameObject:
   - component: {fileID: 4992129157916476777}
   - component: {fileID: 5676294593886116299}
   - component: {fileID: 2660341898017449765}
+  - component: {fileID: 2682448516990849695}
   - component: {fileID: 5559831259641037971}
   m_Layer: 3
   m_Name: player
@@ -202,6 +203,19 @@ MonoBehaviour:
   hurtDuration: 0.3
   Player_Sprite: {fileID: 7442220297531572417}
   Player_State: {fileID: 1301108090669933406}
+--- !u!114 &2682448516990849695
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1889144212815589665}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ecf4bd416da83634a8f76efda16d7a59, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  saveSceneName: 
 --- !u!143 &5559831259641037971
 CharacterController:
   m_ObjectHideFlags: 0
@@ -360,6 +374,7 @@ GameObject:
   - component: {fileID: 2413375494462240439}
   - component: {fileID: 6928143057218878236}
   - component: {fileID: 1234964714283861755}
+  - component: {fileID: 1556434720215454193}
   - component: {fileID: 9104367466246325232}
   m_Layer: 3
   m_Name: Player_Sprite
@@ -422,8 +437,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 1877908795
+  m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 145af322e96480841b514fba8734ee59, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -457,6 +472,18 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &1556434720215454193
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7442220297531572417}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4794b84a669c0d84095e7c6e39767245, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &9104367466246325232
 MonoBehaviour:
   m_ObjectHideFlags: 0
